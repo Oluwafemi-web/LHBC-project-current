@@ -1,308 +1,530 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/47ba2e2d30.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>LHBC Website</title>
-</head>
-<body>
-    <header class="header">
-        <nav>
-            <img src="logo.png" alt="logo" class="logo">
-            <ul class="navlinks">
-                <a href=""><li class="header--link one active ">HOME</li></a>
-                <a href=""><li class="header--link two">ABOUT</li></a>
-                <a href=""><li class="header--link three">GALLERY</li></a>
-                <a href=""><li class="header--link four">CONTACT</li></a>
-                <a href=""><li class="header--link five">BLOG</li></a>
-            </ul>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="header">
+        <nav class="navbar navbar-light nav-1">
+          <div class="container-fluid">
+            <div class="navbar-brand">
+              <a href="index">
+                <i class="fa fa-map-marker"></i>
+                <span>LHBC, Elelenwo Port Harcourt</span>
+              </a>
+            </div>
+            <div>
+              <ul class="d-flex">
+                <a href=""
+                  ><i
+                    class="fa fa-facebook-official"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true""></i></li></a>
+                <a href=""><i class="fa fa-youtube-play" aria-hidden="true""></i></li></a>
+                <a href=""><i class="fa fa-search" aria-hidden="true" id="socials"></i></li></a>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <button class="arrow arrow-left"><strong>&#171</strong></button>
-        <button class="arrow arrow-right"><strong>&#187</strong></button>
-        <div class="placeholder">
-            <h3 class="slide--heading">WE HELP GET THINGS DONE</h3>
-            <h1 class="slide--sub">GOD GIVES US THE POWER</h1>
-            <div class="intro">
+        <nav class="navbar navbar-light">
+          <div class="container-fluid">
+            <div class="navbar-brand">
+              <a href="index">
+                <img src="logo.png" height="100" />
+              </a>
+            </div>
+            <div>
+              <ul class="d-flex navlinks">
+                <a href="#"
+                  ><li class="list-unstyled header--link actives">HOME</li></a
+                >
+                <a href="#"
+                  ><li class="list-unstyled header--link">ABOUT</li></a
+                >
+                <a href="#"
+                  ><li class="list-unstyled header--link">GALLERY</li></a
+                >
+                <a href="#"
+                  ><li class="list-unstyled header--link">CONTACT</li></a
+                >
+                <a href="#"><li class="list-unstyled header--link">BLOG</li></a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h3 class="slide--heading">WE HELP GET THINGS DONE</h3>
+              <h1 class="slide--sub">GOD GIVES US THE POWER</h1>
+              <div class="intro">
                 <p class="slide-description">
-                    Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum 
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
                 </p>
+              </div>
+              <button class="button">CONTACT US</button>
             </div>
-                <button class="button">CONTACT US</button>
-            </div>
-        </div> 
-        <div class="slider">
-            <div class="slide">
-                <h3 class="slide--heading">WE HELP GET THINGS DONE</h3>
-                <h1 class="slide--sub">GOD GIVES US THE POWER</h1>
-                <div class="intro">
+            <div class="carousel-item">
+              <h3 class="slide--heading">WE HELP GET THINGS DONE</h3>
+              <h1 class="slide--sub">LETS BRING THEM HOME</h1>
+              <div class="intro">
                 <p class="slide-description">
-                    Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum 
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
                 </p>
+              </div>
+              <a href=""><button class="button">CONTACT US</button></a>
             </div>
-                <button class="button">CONTACT US</button>
-            </div>
-            <div class="slide slide--one">
-                <h3 class="slide--heading">WE HELP GET THINGS DONE</h3>
-                <h1 class="slide--sub">LETS BRING THEM HOME</h1>
-                <div class="intro">
+            <div class="carousel-item">
+              <h3 class="slide--heading">WE HELP GET THINGS DONE</h3>
+              <h1 class="slide--sub">GIVE HOPE TO THE HOPELESS</h1>
+              <div class="intro">
                 <p class="slide-description">
-                    Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum 
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
                 </p>
-                </div>
-                <a href=""><button class="button">CONTACT US</button></a>
+              </div>
+              <a href=""><button class="button">CONTACT US</button></a>
             </div>
-            <div class="slide slide--two">
-                <h3 class="slide--heading">WE HELP GET THINGS DONE</h3>
-                <h1 class="slide--sub">GIVE HOPE TO THE HOPELESS</h1>
-                <div class="intro">
-                <p class="slide-description">
-                    Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum 
-                </p>
-                </div>
-                <a href=""><button class="button">CONTACT US</button></a>
-            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-    </header>
-    
-    <div class='upcoming'>
-        <div class="calendar calendar--left">
-            <div class="calendar--icon">
-                <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i>
-                <div class="date">
-                    Mar 4
-                </div>
-                <div class="time">
-                    7:00am
-                </div>
-            </div>
-            <div class="calendar--info">
-                <h5>Operation ASK: 10 Days of seeking GOD</h5>
-                <a href="">Event Details</a>
-            </div>
-        </div>
-        <div class=" calendar calendar--right">
-            <div class="calendar--icon">
-                <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i>
-                <div class="date">
-                    Mar 4
-                </div>
-                <div class="time">
-                    7:00am
-                </div>
-            </div>
-            <div class="calendar--info">
+      </header>
+
+      <div class="upcoming row">
+        <div class="calendar calendar--left col-sm-4">
+          <div class="calendar--icon">
+            <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i>
+            <div class="date">Mar 4</div>
+            <div class="time">7:00am</div>
+          </div>
+          <div class="calendar--info">
             <h5>Operation ASK: 10 Days of seeking GOD</h5>
             <a href="">Event Details</a>
-            </div>
+          </div>
         </div>
-    </div>
-    <div class="midsection">
-        <div class="mid--left"><img src="back.JPG" alt=""></div>
-        <div class="mid--right">
-            <div>
-                <h4>ABOUT US</h4>
-                <h3>The Earth is the Lord's and it's fullness thereof</h3>
-                <p class="mid--welcome">On behalf of all members of Living Hope Baptist Church, (Testimony Ground), Port Harcourt, I welcome you to the official website of the Church. We are using this website to introduce you to our church family and the various ministries we engage in.....</p>
-            </div>
-            <div class="mid--sub">
-                <div class="mid--sub--top">
-                    <div class="mid--icon--background">
-                        <i class="fa fa-heart mid--icon" aria-hidden="true"></i>
-                    </div>
-                    <h5>Love one another</h5>
-                    <p class="mid--text">lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum</p>
-                    <a href=""><button>LEARN MORE</button></a>
-                </div>
-                <div class="mid--sub--bottom">
-                    <div class="mid--icon--background">
-                        <i class="fa fa-book mid--icon" aria-hidden="true"></i>
-                    </div>
-                    <h5>The word of God</h5>
-                    <p class="mid--text">lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum</p>
-                </div>
-            </div>
+        <div class="calendar calendar--right col-sm-4">
+          <div class="calendar--icon">
+            <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i>
+            <div class="date">Mar 4</div>
+            <div class="time">7:00am</div>
+          </div>
+          <div class="calendar--info">
+            <h5>Operation ASK: 10 Days of seeking GOD</h5>
+            <a href="">Event Details</a>
+          </div>
         </div>
-    </div>
-    <div class="pray">
-        <div class="star">
-            <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+      </div>
+      <div class="midsection row">
+        <div class="mid--left col-sm-4">
+          <img src="back.JPG" alt="" />
+          <img class="svgback" src="/Dots.svg" alt="" />
         </div>
-        <h3>“Pray! And listen to God! You can do this alone, but find somebody to do it with you”</h3>
+        <div class="mid--right col-sm-6">
+          <div>
+            <h4>ABOUT US</h4>
+            <h3>The Earth is the Lord's and it's fullness thereof</h3>
+            <p class="mid--welcome">
+              On behalf of all members of Living Hope Baptist Church, (Testimony
+              Ground), Port Harcourt, I welcome you to the official website of
+              the Church. We are using this website to introduce you to our
+              church family and the various ministries we engage in.....
+            </p>
+          </div>
+          <div class="mid--sub d-flex">
+            <div class="mid--sub--top">
+              <div class="mid--icon--background">
+                <i class="fa fa-heart mid--icon" aria-hidden="true"></i>
+              </div>
+              <h5>Love one another</h5>
+              <p class="mid--text">
+                lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem
+                ipsum
+              </p>
+              <a href=""><button class="button">LEARN MORE</button></a>
+            </div>
+            <div class="mid--sub--bottom">
+              <div class="mid--icon--background">
+                <i class="fa fa-book mid--icon" aria-hidden="true"></i>
+              </div>
+              <h5>The word of God</h5>
+              <p class="mid--text">
+                lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem
+                ipsum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pray d-flex">
+        <div class="mid--icon--background">
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <h3>
+          “Pray! And listen to God! You can do this alone, but find somebody to
+          do it with you”
+        </h3>
         <p>As you give to God, He's going to bless you</p>
-        <a href=""><button class="donate">DONATE</button></a>
-    </div>
-    <section class="sermon">
-        <div class="sermon--top">
-            <div class="heading">
-                <h2>Today's Sermon</h2>
-            </div>
-            <div class="sermon--details">
-                <h3>Activating Good news</h3>
-                <h5>- Revd Steve Ayorinde</h5>
-                <p id="sermon--details">27th October 2020</p>
-                <p id="sermon--text">
-                    Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum 
-                </p>
-
-            </div>
-            <div class="details2">
-                <img src="" alt="">
-            </div>
+        <a href=""><button class="donate button-transparent">DONATE</button></a>
+      </div>
+      <section class="sermon">
+        <div class="heading d-flex">
+          <img src="/Vector.svg" alt="" />
+          <h2>Today's Sermon</h2>
+          <img src="/Vector.svg" alt="" />
+        </div>
+        <div class="sermon--top d-flex">
+          <div class="sermon--details">
+            <h3>Activating Good news</h3>
+            <h5>- Revd Steve Ayorinde</h5>
+            <p id="sermon--details">27th October 2020</p>
+            <p id="sermon--text">
+              Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem
+              ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+              lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem
+              ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+              Lorem ipsum lorem ipsum
+            </p>
+          </div>
+          <div class="details2">
+            <img src="/Rectangle 13.svg" alt="" />
+          </div>
         </div>
         <section class="organizations">
-            <div class="heading">
-                <h5>ORGANIZATIONS</h5>
-                <h3>OUR ORGANIZATIONS</h3>
+          <div class="heading-o d-flex">
+            <h5>ORGANIZATIONS</h5>
+            <h3>OUR ORGANIZATIONS</h3>
+          </div>
+          <div class="organizations--bottom d-flex">
+            <div class="organ col-sm-3">
+              <div class="organizations--background"></div>
+              <div class="organizations--content">
+                <h4>Men's Missionary Union</h4>
+                <p>
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ip
+                </p>
+                <a href="">Read more</a>
+              </div>
             </div>
-            <div class="organizations--bottom">
-                <div class="organ">
-                    <div class="organizations--background">
-                    </div>
-                    <div class="organizations--content">
-                        <h4>Men's Missionary Union</h4>
-                        <p>
-                            Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum 
-                        </p>
-                        <a href="">Read more</a>
-                    </div>
-                </div>
-                <div class="organ">
-                    <div class="organizations--background">
-                    </div>
-                    <div class="organizations--content">
-                        <h4>Men's Missionary Union</h4>
-                        <p>
-                            Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ip
-                        </p>
-                        <a href="">Read more</a>
-                    </div>
-                </div>
-                <div class="organ">
-                    <div class="organizations--background">
-                    </div>
-                    <div class="organizations--content">
-                        <h4>Men's Missionary Union</h4>
-                        <p>
-                            Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ip
-                        </p>
-                        <a href="">Read more</a>
-                    </div>
-                </div>
+            <div class="organ col-sm-3">
+              <div class="organizations--background"></div>
+              <div class="organizations--content">
+                <h4>Women's Missionary Union</h4>
+                <p>
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ip
+                </p>
+                <a href="">Read more</a>
+              </div>
             </div>
+            <div class="organ col-sm-3">
+              <div class="organizations--background"></div>
+              <div class="organizations--content">
+                <h4>The Youth fellowship</h4>
+                <p>
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+                  lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                  Lorem ip
+                </p>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
         </section>
-    </section>
-    <div class="call">
-        <div class="call--info">
-                <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-            <h3>Call Us</h3>
-            <p>+234 803 377 0288</p>
-            <p>lhbcportharcourt@gmail.com</p>
-            <p>Living Hope Baptist Church <br>High Tension Pole Road <br>Elelenwo, Port Harcourt <br>Nigeria</p>
+      </section>
+      <div class="call d-flex">
+        <div class="call--info col-sm-3">
+          <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+          <h3>Call Us</h3>
+          <p>+234 803 377 0288</p>
+          <p>lhbcportharcourt@gmail.com</p>
+          <p>
+            Living Hope Baptist Church <br />High Tension Pole Road
+            <br />Elelenwo, Port Harcourt <br />Nigeria
+          </p>
         </div>
-        <div class="call--right">
-            <h5>GET IN TOUCH</h5>
-            <h3>You can always reach out to us</h3>
-            <p>
-                    Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum  Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum  Lorem ip
-            </p>
-            <a href=""><button>CONTACT US</button></a>
+        <div class="call--right col-sm-5">
+          <h5>GET IN TOUCH</h5>
+          <h3>You can always reach out to us</h3>
+          <p>
+            Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem
+            ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum
+            lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem
+            ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ip
+          </p>
+          <a href=""><button class="button">CONTACT US</button></a>
         </div>
-    </div>
-    <div class="svg">
-        <img src="Group 4.svg" alt="" class="">
-    </div>
-    <section class="blog">
-        <div class="blog--head">
-            <h3>OUR BLOG</h3>
-            <h5>CATCH OUR LATEST UPDATES</h5>
+      </div>
+      <div class="svg"></div>
+      <section class="blog">
+        <div class="blog--head d-flex">
+          <h3>OUR BLOG</h3>
+          <h5>CATCH OUR LATEST UPDATES</h5>
         </div>
-        <div class="blog--bottom">
-            <div class="blogs">
-                <div class="blog--background">
-                </div>
-                <div class="blog--content">
-                    <h6>Giving to God - Active ways  to get blessed</h6>
-                        <a href="">Read more</a>
-                </div>
+        <div class="blog--bottom d-flex">
+          <div class="blogs col-sm-3">
+            <div class="blog--background">
+              <p class="vertical">Oct. 16 2020</p>
             </div>
-            <div class="blogs">
-                <div class="blog--background">
-                </div>
-                <div class="blog--content">
-                <h6>Giving to God - Active ways  to get blessed</h6>
-                        <a href="">Read more</a>
-                </div>
+            <div class="blog--content">
+              <h6>Giving to God - Active ways to get blessed</h6>
+              <a href="">Read more</a>
             </div>
-            <div class="blogs">
-                <div class="blog--background">
-                </div>
-                <div  class="blog--content">
-                    <h6>Giving to God - Active ways  to get blessed</h6>
-                        <a href="">Read more</a>
-                </div>
+          </div>
+          <div class="blogs col-sm-3">
+            <div class="blog--background">
+              <p class="vertical">Oct. 16 2020</p>
             </div>
+            <div class="blog--content">
+              <h6>Giving to God - Active ways to get blessed</h6>
+              <a href="">Read more</a>
+            </div>
+          </div>
+          <div class="blogs col-sm-3">
+            <div class="blog--background">
+              <p class="vertical">Oct. 16 2020</p>
+            </div>
+            <div class="blog--content">
+              <h6>Giving to God - Active ways to get blessed</h6>
+              <a href="">Read more</a>
+            </div>
+          </div>
         </div>
-    </section>
-    <div class="quicklinks">
-        <div class="about">
-            <h3>About US</h3>
-            <p class="about--info">We are a community of people loving each other and our Lord. Be completely humble and gentle, be patient, bearing with one another in love.We are a community Lord.
-            </p>
-            <div class="socials">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true" id="socials"></i>
-                <i class="fa fa-twitter-square fa-2x" aria-hidden="true" id="socials"></i>
-                <i class="fa fa-instagram fa-2x" aria-hidden="true" id="socials"></i>
-                <i class="fa fa-whatsapp fa-2x" aria-hidden="true" id="socials"></i>
-                <i class="fa fa-youtube-play fa-2x" aria-hidden="true" id="socials"></i>
-            </div>
+      </section>
+      <div class="quicklinks d-flex">
+        <div class="about col">
+          <h3>
+            <svg
+              width="70"
+              height="29"
+              viewBox="0 0 70 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="13" width="70" height="7" fill="#BF0A30" />
+              <rect x="17" width="7" height="29" fill="#BF0A30" />
+            </svg>
+            About US
+          </h3>
+          <p class="about--info">
+            We are a community of people loving each other and our Lord. Be
+            completely humble and gentle, be patient, bearing with one another
+            in love.We are a community Lord.
+          </p>
+          <div class="socials">
+            <i
+              class="fa fa-facebook-official fa-2x"
+              aria-hidden="true"
+              id="socials"
+            ></i>
+            <i
+              class="fa fa-twitter-square fa-2x"
+              aria-hidden="true"
+              id="socials"
+            ></i>
+            <i
+              class="fa fa-instagram fa-2x"
+              aria-hidden="true"
+              id="socials"
+            ></i>
+            <i class="fa fa-whatsapp fa-2x" aria-hidden="true" id="socials"></i>
+            <i
+              class="fa fa-youtube-play fa-2x"
+              aria-hidden="true"
+              id="socials"
+            ></i>
+          </div>
         </div>
-        <div class="about">
-            <h3>Quick Links</h3>
-            <p class="about--info"><i class="fa fa-star" aria-hidden="true"></i><a href="">Who are we?</a></p>
-            <p class="about--info"><i class="fa fa-star" aria-hidden="true"></i><a href="">Who are we?</a></p>
-            <p class="about--info"><i class="fa fa-star" aria-hidden="true"></i><a href="">Who are we?</a></p>
-            <p class="about--info"><i class="fa fa-star" aria-hidden="true"></i><a href="">Who are we?</a></p>
-            <p class="about--info"><i class="fa fa-star" aria-hidden="true"></i><a href="">Who are we?</a></p>
-            <p class="about--info"><i class="fa fa-star" aria-hidden="true"></i><a href="">Who are we?</a></p>
+        <div class="about col">
+          <h3>
+            <svg
+              width="70"
+              height="29"
+              viewBox="0 0 70 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="13" width="70" height="7" fill="#BF0A30" />
+              <rect x="17" width="7" height="29" fill="#BF0A30" />
+            </svg>
+            Quick Links
+          </h3>
+          <p class="about--info">
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><a href="">Who are we?</a>
+          </p>
+          <p class="about--info">
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><a href="">Who are we?</a>
+          </p>
+          <p class="about--info">
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><a href="">Who are we?</a>
+          </p>
+          <p class="about--info">
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><a href="">Who are we?</a>
+          </p>
+          <p class="about--info">
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><a href="">Who are we?</a>
+          </p>
+          <p class="about--info">
+            <i class="fa fa-star" aria-hidden="true"></i
+            ><a href="">Who are we?</a>
+          </p>
         </div>
-        <div class="about updates">
-            <h3>Updates</h3>
-            <div class="update--sub">
-                <img src="back.JPG" alt="">
-                <div>
-                    <p class="update--title">Giving to God - Active ways to get blessed</p>
-                    <div class="update--date">
-                        <i class="fa fa-calendar-check-o fa-2x update--calendar" aria-hidden="true"></i>
-                        <p class="update--p">Oct. 16th 2020</p>
-                    </div>
-                </div>
+        <div class="about updates col">
+          <h3>
+            <svg
+              width="70"
+              height="29"
+              viewBox="0 0 70 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="13" width="70" height="7" fill="#BF0A30" />
+              <rect x="17" width="7" height="29" fill="#BF0A30" />
+            </svg>
+            Updates
+          </h3>
+          <div class="update--sub line d-flex">
+            <img src="Rectangle 31.png" alt="" />
+            <div>
+              <p class="update--title">
+                Giving to God - Active ways to get blessed
+              </p>
+              <div class="update--date d-flex">
+                <i
+                  class="fa fa-calendar-check-o fa-2x update--calendar"
+                  aria-hidden="true"
+                ></i>
+                <p class="update--p">Oct. 16th 2020</p>
+              </div>
             </div>
-            <div class="update--sub">
-                <img src="back.JPG" alt="">
-                <div>
-                    <p class="update--title">Giving to God - Active ways to get blessed</p>
-                    <div class="update--date">
-                        <i class="fa fa-calendar-check-o fa-2x update--calendar" aria-hidden="true" ></i>
-                        <p class="update--p">Oct. 16th 2020</p>
-                    </div>
-                </div>
+          </div>
+          <div class="update--sub d-flex">
+            <img src="Rectangle 31.png" alt="" />
+            <div>
+              <p class="update--title">
+                Giving to God - Active ways to get blessed
+              </p>
+              <div class="update--date d-flex">
+                <i
+                  class="fa fa-calendar-check-o fa-2x update--calendar"
+                  aria-hidden="true"
+                ></i>
+                <p class="update--p">Oct. 16th 2020</p>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="about">
-            <h3>Newsletter</h3>
-            <p class="about--info">Sign up to recive daily updates and live feeds. Your information is private and safe. We won't spam you.</p> 
-            <div class="input"> 
-                <input type="email" placeholder="Email-address" class="email">
-                <input type="submit" value="Sign Up" class="sign-up">
-            </div>
+        <div class="about col">
+          <h3>
+            <svg
+              width="70"
+              height="29"
+              viewBox="0 0 70 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="13" width="70" height="7" fill="#BF0A30" />
+              <rect x="17" width="7" height="29" fill="#BF0A30" />
+            </svg>
+            Newsletter
+          </h3>
+          <p class="about--info">
+            Sign up to recive daily updates and live feeds. Your information is
+            private and safe. We won't spam you.
+          </p>
+          <div class="input">
+            <input type="email" placeholder="Email-address" class="email" />
+            <input type="submit" value="Sign Up" class="sign-up" />
+          </div>
         </div>
-    </div> 
-    <footer class="footer">
-        <p id="copyright">Copyright <strong>|</strong> 2020 <strong>|</strong> Living Hope Baptist Church</p>
+      </div>
+      <footer class="footer d-flex">
+        <p id="copyright">
+          Copyright <strong>|</strong> 2020 <strong>|</strong> Living Hope
+          Baptist Church
+        </p>
         <p id="privacy">Privacy Policy <strong>|</strong> Terms & Conditions</p>
-    </footer>
+      </footer>
+    </div>
     <script src="script.js"></script>
- </body>
+  </body>
 </html>

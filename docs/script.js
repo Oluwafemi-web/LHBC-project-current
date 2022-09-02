@@ -11,30 +11,7 @@ document.querySelectorAll(".button").forEach((btn) =>
   })
 );
 //implement header carousel
-const slides = document.querySelectorAll(".slide");
-slides.forEach((s, i) => {
-  s.style.transform = `translateX(${i * 100}%)`;
-});
-let count = 0;
-// right button
-document.querySelector(".arrow-right").addEventListener("click", (e) => {
-  e.preventDefault();
-  if (count === slides.length - 1) count = 0;
-  else count++;
-  slides.forEach((s, i) => {
-    s.style.transform = `translateX(${100 * (i - count)}%)`;
-  });
-});
-// left button
-document.querySelector(".arrow-left").addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log("click");
-  if (count < 1) count = slides.length - 1;
-  else count--;
-  slides.forEach((s, i) => {
-    s.style.transform = `translateX(${100 * (i - count)}%)`;
-  });
-});
+
 //implement active link in header
 document.querySelector(".navlinks").addEventListener("click", (e) => {
   e.preventDefault();
@@ -42,9 +19,9 @@ document.querySelector(".navlinks").addEventListener("click", (e) => {
   console.log(clicked);
   if (clicked.classList.contains("header--link")) {
     document.querySelectorAll(".header--link").forEach((link) => {
-      link.classList.remove("active");
+      link.classList.remove("actives");
     });
-    clicked.classList.add("active");
+    clicked.classList.add("actives");
   }
 });
 //implement intersection observer API
