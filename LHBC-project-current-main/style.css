@@ -19,7 +19,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#01163554;
+    background:#011635;
 }
 
 .headerContainer {
@@ -1022,6 +1022,12 @@
     font-size:0.8rem;
     font-family:Arial, Helvetica, sans-serif;
     margin:0rem 0rem 0rem 0.5rem;
+}
+
+.fa-calendar-plus {
+    color:#ac0909;
+    font-size:1rem;
+    margin:0rem 0.5rem 0rem 0rem;
 }
 
 .footerNewsletter {
@@ -4223,6 +4229,7 @@
         width:100%;
         height:6rem;
         z-index:999;
+        background:#01163566;
     }
 
     .headerContainer {
@@ -4239,6 +4246,7 @@
         align-items:center;
         height:2rem;
         padding:0.5rem 2rem 0rem 2rem;
+        background:#011635;
     }
 
     .headerChurchName {
@@ -6088,13 +6096,13 @@
 
     .footerContainer {
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:0rem 2rem;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows:auto;
+        grid-gap:0rem 1rem;
         justify-items:center;
-        align-items:center;
+        align-items:start;
         width:900px;
-        padding:0rem 1rem 1rem 1rem;
+        padding:2rem 0.5rem 1rem 0.5rem;
     }
 
     .footerAbout {
@@ -6103,8 +6111,8 @@
         display:flex;
         flex-direction:column;
         align-items:flex-start;
-        padding:0rem 0.8rem 0rem 0.8rem;
-        margin:1rem 0rem 0rem 0rem;
+        padding:0rem 0rem 0rem 0rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
     .footerAboutHeader {
@@ -6151,7 +6159,7 @@
         flex-direction:column;
         align-items:center;
         justify-content: center;
-        padding:0rem 0.8rem 0rem 0.8rem;
+        padding:0rem 0rem 0rem 0rem;
         margin:0rem 0rem 0rem 0rem;
     }
 
@@ -6199,19 +6207,18 @@
 
     .firstUpdate,
     .secondUpdate {
-        width:17rem;
-        height:6rem;
+        width:15rem;
+        height:5rem;
         display:flex;
         flex-direction:row;
         align-items:center;
-        justify-content:center;
+        justify-content:space-between;
         padding:0rem 0.5rem 0rem 0.5rem;
-        margin:0rem 0rem 0rem 0rem;
+        margin:0.5rem 0rem 0.5rem 0rem;
     }
 
     .footerUpdates hr {
-        width:90%;
-        margin:0.5rem 0rem 0.5rem 0rem;
+        width:95%;
     }
 
     .updateImg {
@@ -6219,6 +6226,10 @@
         height:5rem;
         border-radius:5px;
         background:url(./images/Rectangle31.png) center/cover no-repeat;
+    }
+
+    .footerUpdateContainer {
+        width:70%;
     }
 
     .updateHeader {
@@ -6236,7 +6247,6 @@
     }
 
     .footerNewsletter {
-        grid-area:2/2/3/3;
         width:95%;
         min-height:5rem;
         display:flex;
@@ -6244,6 +6254,7 @@
         align-items:center;
         justify-content:flex-start;
         padding:0rem 0rem 0rem 0rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
     .footerNewsletterHeader {
@@ -6292,21 +6303,21 @@
         display:flex;
         flex-direction:row;
         align-items:center;
-        justify-content:space-around;
+        justify-content:space-evenly;
     }
 
     .copyright {
         color:#fff;
         font-size:0.8rem;
         font-weight:bold;
-        margin:0rem 0rem 0rem 0rem;
+        margin:0rem 0rem 0.2rem 0rem;
     }
 
     .privacyAndTerms {
         color:#fff;
         font-size:0.8rem;
         font-weight:bold;
-        margin:0rem 0rem 0rem 0rem;
+        margin:0.2rem 0rem 0rem 0rem;
     }
 }
 
