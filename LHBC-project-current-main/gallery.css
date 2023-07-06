@@ -131,7 +131,7 @@
     display:none;
 }
 
-.hero{
+.galleryBanner {
     width:100%;
     height:80vh;
     display:flex;
@@ -141,284 +141,232 @@
     background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
 }
 
-.heroMainText {
+.galleryBannerMainText {
     color:#fff;
     font-size:2rem;
     font-family: 'Inter', sans-serif;
     margin:10rem 0rem 0rem 0rem;
 }
 
-.aboutContent {
+.galleryMessage {
     width:100%;
     min-height:10vh;
     display:flex;
     flex-direction:column;
-    justify-content: flex-start;
     align-items:center;
+    justify-content:center;
 }
 
-.aboutContentContainer {
+.galleryMessageContainer {
     display:grid;
     grid-template-columns:1fr;
-    grid-template-rows:auto auto auto;
+    grid-template-rows:auto auto;
+    justify-items:center;
+    align-items:start;
     padding:1rem 0.5rem 1rem 0.5rem;
 }
 
-.aboutContentImg {
-    width:100%;
-    height:15rem;
-    background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-}
-
-.aboutContentText {
-    width:100%;
-    height:auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin:1rem 0rem 1rem 0rem;
-    padding:1rem 0rem 1rem 0rem;
-}
-
-.aboutContentFirstText {
-    font-family:'inter', sans-serif;
-    font-weight:700;
+.messageFirstText {
     font-size:1rem;
     color:#ac0909;
+    font-weight:600;
+    font-family: 'inter', sans-serif;
 }
 
-.aboutContentSecondText {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:1.2rem;
-    margin:0.5rem 0rem 0.5rem 0rem;
+.currentMessage {
+    width:100%;
+    height:auto;
+    border-radius:0.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:1rem 0.5rem 1rem 0.5rem;
+    margin:1rem 0rem 0rem 0rem;
+    box-shadow:2px 2px 20px #000;
 }
 
-.aboutContentMainText {
-    font-size:0.9rem;
+.currentMessageFirstText {
+    color:#000;
+    font-size:1.1rem;
+    font-family:'inter', sans-serif;
+    font-style:italic;
+    font-weight:600;
+    text-align:center;
+}
+
+.preacher {
+    color:#ac0909;
+    font-size:0.8rem;
+    font-weight:600;
+    font-style: italic;
+    padding:0.5rem 0rem 0rem 0rem;
+}
+
+.messageDate {
+    display:block;
+    font-weight:500;
+    opacity:0.8;
 }
 
 .message {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:flex-start;
-    width:100%;
-    height:auto;
+    font-size:0.8rem;
+    margin:1rem 0rem 0rem 0rem;
 }
 
-.message1 {
+.mediaIcons {
     width:100%;
-    height:5rem;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    background:#011635;
-    border-radius:0.5rem;
-    padding:0.5rem 0rem 0.5rem 0.5rem;
-    margin:0rem 0rem 0.5rem 0rem;
-}
-
-.message2 {
-    width:100%;
-    height:5rem;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    background:#011635;
-    border-radius:0.5rem;
-    padding:0.5rem 0rem 0.5rem 0.5rem;
-    margin:0.5rem 0rem 0rem 0rem;
-}
-
-.playIcon {
-    width:3rem;
     height:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:1rem 0rem 0rem 0rem;
+}
+
+.mediaButton {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:2rem;
+    height:2rem;
     border-radius:50%;
     background:#ac0909;
-    margin:0rem 0.5rem 0rem 0.5rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    margin:0rem 0.7rem 0rem 0.7rem;
+    box-shadow: 2px 2px 20px #000;
 }
 
-.fa-play {
-    color:#fff;
-    font-size:1.5rem;
-}
-
-.messageContent {
-    width:70%;
-    height:90%;
-}
-
-.messageHeader {
-    font-size:0.9rem;
+.fa-play,
+.fa-pause,
+.fa-download,
+.fa-share-nodes {
     color:#fff;
 }
 
-.preacherName {
-    color:#fff;
-    font-size:0.9rem;
-    margin:0.6rem 0rem 0rem 0rem;
+.sermonButton {
+    display:none;
 }
 
-.sermonDate {
-    color:#ffffffa6;
-    font-size:0.8rem;
-}
-
-.diaconate {
+.galleryMessageList {
     width:100%;
-    min-height:10vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.diaconateContainer {
-    width:100%;
+    height:auto;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:flex-start;
-    padding:1rem 0.5rem 1rem 0.5rem;
+    justify-content:center;
+    padding:1rem 0rem 2rem 0rem;
 }
 
-.diaconateFirstText {
-    font-family:'inter', sans-serif;
-    font-size:1.1rem;
-    text-align:center;
-    color:#ac0909;
-    font-weight:600;
+.galleryMessageListContainer {
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto auto;
+    align-items:center;
+    justify-items:center;
+    padding:1rem 0.5rem 0rem 0.5rem;
 }
 
-.diaconateHeader {
-    font-family:'inter', sans-serif;
-    font-size:1.5rem;
-    text-align:center;
-    font-style: italic;
-    margin:0.5rem 0rem 0rem 0rem;
+.messageDisplayType {
+    display:none;
+    align-self:self-end;
 }
 
-.deaconsList {
-    width:90%;
+.gridAndFlex {
+    display:none;
+    justify-self:end;
+    width:2rem;
+    height:2rem;
+    margin:0rem 1rem 0rem 0rem;
+}
+
+.displayToggle {
+    display:none;
+    float:right;
+    width:100%;
+    height:100%;
+}
+
+.messageGallery {
+    width:100%;
     height:auto;
     display:grid;
     grid-template-columns:1fr;
     grid-template-rows:auto auto auto auto;
+    justify-items:center;
+    align-items:center;
     grid-gap:2rem;
-    padding:2rem 0rem 0rem 0rem;
 }
 
-.deacon {
-    width:100%;
-    height:20rem;
-    border-radius:1rem;
-    box-shadow: 1px 1px 20px #000000ad;
+.message1,
+.message2,
+.message3,
+.message4 {
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width:100%;
+    height:32rem;
+    border-radius:0.5rem;
+    box-shadow: 2px 2px 20px #000;
+}
+
+.messageImg {
+    height:40%;
+    width:100%;
+    border-radius:0.5rem 0.5rem 0rem 0rem;
+    background:url(./images/Placeholder3.png) center/cover;
+}
+
+.messageContentContainer {
+    height:60%;
+    display:flex;
+    flex-direction:column;
     justify-content:space-between;
-    padding:0rem 0rem 1rem 0rem;
+    align-items: flex-start;
+    padding:0.5rem 0.5rem 1rem 0.5rem;
 }
 
-.deaconImg {
-    width:100%;
-    height:80%;
-    border-radius:1rem 1rem 0rem 0rem;
-    background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-}
-
-.deaconName {
+.messageHeader {
+    font-size:1rem;
     font-family:'inter', sans-serif;
-    font-weight:600;
+    font-style:italic;
+    margin:0rem 0rem 0rem 0rem;
 }
 
-.organisation {
-    width:100%;
-    min-height:10vh;
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:1fr 1fr;
-    align-items:start;
-    justify-items:center;
-    padding:1rem 0.5rem 1rem 0.5rem;
-    background:url(./images/Rectangle15.svg) center/cover;
-}
-
-.organisationFirstText {
-    font-size:0.8rem;
-    font-family:'inter', sans-serif;
-    color:#8b0000;
-    margin:1rem 0rem 0rem 0rem;
-}
-
-.organisationHeader {
-    font-size:1.3rem;
-    font-family:'inter', sans-serif;
-    margin:0rem 0rem 0.5rem 0rem;
-}
-
-.organisationContainer {
-    width:100%;
-    min-height:10rem;
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:1fr 1fr 1fr;
-    align-items:center;
-    justify-items:center;
-    margin:0.5rem 0rem 1rem 0rem;
-}
-
-.union {
-    width:100%;
-    height:25rem;
-    margin:1rem 0rem 1rem 0rem;
-    background:#fff;
-    border-radius:1rem;
-    box-shadow: 1px 1px 30px #000000ab;
-}
-
-.unionImg {
-    width:100%;
-    height:50%;
-    border-radius:1rem 1rem 0rem 0rem;
-    background:url(./images/Rectangle31.png) center/cover no-repeat;
-}
-
-.unionHeader {
+.messagePreacher {
+    color:#ac0909;
     font-size:0.9rem;
-    text-align:center;
+    font-weight:600;
+    font-style: italic;
     margin:0.5rem 0rem 0rem 0rem;
 }
 
-.unionText {
-    font-size:0.8rem;
-    text-align:left;
-    padding:0rem 1rem 0rem 1rem;
-    margin:0.5rem 0rem 0.7rem 0rem;
-}
-
-.unionDetails {
+.messageDateAndMonth {
     display:block;
-    font-size:0.8rem;
-    color:#8b0000;
-    padding:0rem 1rem 0rem 1rem;
-    margin:0.5rem 0rem 0rem 0rem;
-    position:relative;
+    font-weight:500;
+    opacity:0.7;
+    margin:0rem 0rem 0rem 0.5rem;
 }
 
-.unionDetails::after {
-    content:"";
-    width:4rem;
-    height:1px;
-    position:absolute;
-    top:0.82rem;
-    left:1rem;
-    background:#8b0000;
+.messageContent {
+    font-size:0.9rem;
+    margin:0.5rem 0rem 0rem 0rem;
+}
+
+.messageReadmoreBtn {
+    font-size:0.9rem;
+    margin:0.7rem 0rem 0rem 0rem;
+    width:5rem;
+    height:2rem;
+    background:#ac0909;
+    border-radius:0.5rem;
+}
+
+.messageReadmore {
+    color:#fff;
+    position:relative;
 }
 
 .event {
@@ -972,9 +920,9 @@
         display:none;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
-        height:70vh;
+        height:80vh;
         display:flex;
         flex-direction:column;
         align-items:center;
@@ -982,288 +930,234 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
-        font-size:2rem;
+        font-size:1.5rem;
         font-family: 'Inter', sans-serif;
-        margin:10rem 0rem 0rem 0rem;
+        margin:8rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
-        padding:1rem 0.5rem 1rem 0.5rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:15rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
-        height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:1rem 0rem 1rem 0rem;
+        grid-template-rows:auto auto;
+        justify-items:center;
+        align-items:start;
         padding:1rem 0rem 1rem 0rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1rem;
+    .messageFirstText {
+        font-size:0.8rem;
         color:#ac0909;
+        font-weight:600;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.2rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
+    .currentMessage {
+        width:90%;
+        height:auto;
+        border-radius:0.5rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        margin:1rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentMainText {
-        font-size:0.9rem;
+    .currentMessageFirstText {
+        color:#000;
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
+    }
+
+    .preacher {
+        color:#ac0909;
+        font-size:0.8rem;
+        font-weight:600;
+        font-style: italic;
+        padding:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDate {
+        display:block;
+        font-weight:500;
+        opacity:0.8;
     }
 
     .message {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        width:100%;
-        height:auto;
+        font-size:0.7rem;
+        margin:1rem 0rem 0rem 0rem;
+        line-height:0.9rem;
     }
 
-    .message1 {
+    .mediaIcons {
         width:100%;
-        height:4rem;
+        height:3rem;
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
+        justify-content:center;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .message2 {
-        width:100%;
-        height:4rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:2.5rem;
-        height:2.5rem;
+        justify-content:center;
+        width:1.5rem;
+        height:1.5rem;
         border-radius:50%;
         background:#ac0909;
         margin:0rem 0.5rem 0rem 0.5rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .fa-play {
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
         color:#fff;
-        font-size:1.1rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
         font-size:0.8rem;
-        color:#fff;
     }
 
-    .preacherName {
-        color:#fff;
-        font-size:0.7rem;
-        margin:0.4rem 0rem 0rem 0rem;
+    .sermonButton {
+        display:none;
     }
 
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.7rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:100%;
+        height:auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0.5rem 1rem 0.5rem;
+        justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:0.8rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
+    .galleryMessageListContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 0rem 0rem 0rem;
     }
 
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
+    .messageDisplayType {
+        display:none;
+        align-self:self-end;
     }
 
-    .deaconsList {
+    .gridAndFlex {
+        display:none;
+        justify-self:end;
+        width:2rem;
+        height:2rem;
+        margin:0rem 1rem 0rem 0rem;
+    }
+
+    .displayToggle {
+        display:none;
+        float:right;
+        width:100%;
+        height:100%;
+    }
+
+    .messageGallery {
         width:90%;
         height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
+        grid-template-rows:auto auto auto auto;
+        justify-items:center;
+        align-items:center;
         grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:13rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
         display:flex;
         flex-direction:column;
         align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:25rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageImg {
+        height:40%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageContentContainer {
+        height:60%;
+        display:flex;
+        flex-direction:column;
         justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
     }
 
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0.5rem 1rem 0.5rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
+    .messageHeader {
         font-size:0.8rem;
         font-family:'inter', sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .organisationHeader {
-        font-size:1rem;
-        font-family:'inter', sans-serif;
-        margin:0.3rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:100%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        align-items:center;
-        justify-items:center;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:16rem;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        padding:0rem 0rem 0.5rem 0rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
+    .messagePreacher {
+        color:#ac0909;
         font-size:0.7rem;
-        text-align:center;
-        margin:0.2rem 0rem 0rem 0rem;
+        font-weight:600;
+        font-style: italic;
+        margin:0.1rem 0rem 0rem 0rem;
     }
 
-    .unionText {
-        font-size:0.6rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.2rem 0rem 0.4rem 0rem;
-    }
-
-    .unionDetails {
+    .messageDateAndMonth {
         display:block;
-        font-size:0.7rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.2rem 0rem 0rem 0rem;
-        position:relative;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:3.5rem;
-        height:1px;
-        position:absolute;
-        top:0.6rem;
-        left:1rem;
-        background:#8b0000;
+    .messageContent {
+        font-size:0.7rem;
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageReadmoreBtn {
+        font-size:0.7rem;
+        margin:0.5rem 0rem 0rem 0rem;
+        width:5rem;
+        height:2rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+    }
+
+    .messageReadmore {
+        color:#fff;
+        position:relative;
     }
 
     .event {
@@ -1816,7 +1710,7 @@
         display:none;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -1826,295 +1720,225 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
+        grid-template-rows:auto auto;
         justify-items:center;
-        width:90%;
-        padding:2rem 0rem 1rem 0rem;
+        align-items:start;
+        padding:1rem 0.5rem 1rem 0.5rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:17rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .messageFirstText {
+        font-size:1rem;
+        color:#ac0909;
+        font-weight:600;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentText {
+    .currentMessage {
         width:100%;
         height:auto;
+        border-radius:0.5rem;
         display:flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
         align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        margin:1rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
+    }
+
+    .preacher {
         color:#ac0909;
+        font-size:0.8rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
     }
 
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.3rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1rem;
+    .messageDate {
+        display:block;
+        font-weight:500;
+        opacity:0.8;
     }
 
     .message {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        width:100%;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        font-size:0.8rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .message1 {
+    .mediaIcons {
         width:100%;
-        height:6rem;
+        height:3rem;
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
+        justify-content:center;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .message2 {
-        width:100%;
-        height:6rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:4rem;
-        height:4rem;
+        justify-content:center;
+        width:2rem;
+        height:2rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1rem;
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
         color:#fff;
     }
 
-    .preacherName {
-        color:#fff;
-        font-size:1rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.9rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:90%;
+        height:auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
+        justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
+    .galleryMessageListContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 0.5rem 0rem 0.5rem;
     }
 
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
+    .messageDisplayType {
+        display:none;
+        align-self:self-end;
     }
 
-    .deaconsList {
+    .gridAndFlex {
+        justify-self:end;
+        width:2rem;
+        height:2rem;
+        margin:0rem 1rem 0rem 0rem;
+    }
+
+    .displayToggle {
+        display:none;
+        float:right;
+        width:100%;
+        height:100%;
+    }
+
+    .messageGallery {
         width:100%;
         height:auto;
         display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto auto auto;
-        justify-content:center;
+        justify-items:center;
+        align-items:center;
         grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:23rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:35rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0rem 1rem 0rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:90%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        align-items:center;
-        justify-items:center;
-        padding:0rem 0rem 0rem 0rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:31rem;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        margin:1rem 0rem 1rem 0rem;
-        padding:0rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
+    .messageImg {
         height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
     }
 
-    .unionHeader {
+    .messageContentContainer {
+        height:50%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageHeader {
         font-size:1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .unionText {
-        font-size:0.95rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
+    .messagePreacher {
+        color:#ac0909;
         font-size:0.9rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.4rem;
-        height:1px;
-        position:absolute;
-        top:0.8rem;
-        left:1rem;
-        margin:0rem 0rem 1rem 0rem;
-        background:#8b0000;
+    .messageDateAndMonth {
+        display:block;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+    }
+
+    .messageContent {
+        font-size:0.9rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageReadmoreBtn {
+        font-size:0.9rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+    }
+
+    .messageReadmore {
+        color:#fff;
+        position:relative;
     }
 
     .event {
@@ -2551,7 +2375,7 @@
 }
 
 @media screen and (min-width:375px) {
-    .header {
+        .header {
         width:100%;
         height:4rem;
         position:fixed;
@@ -2671,7 +2495,7 @@
         display:none;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -2681,290 +2505,226 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
+        grid-template-rows:auto auto;
         justify-items:center;
-        width:90%;
-        padding:2rem 0rem 1rem 0rem;
+        align-items:start;
+        padding:1rem 1rem 1rem 1rem;
+        margin:0rem 0rem 3rem 0rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:17rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
-        height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
+    .messageFirstText {
         font-size:1.1rem;
         color:#ac0909;
+        font-weight:600;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
+    .currentMessage {
+        width:100%;
+        height:auto;
+        border-radius:0.5rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        margin:1rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
+    }
+
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.3rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
     }
 
-    .aboutContentMainText {
-        font-size:1rem;
+    .preacher {
+        color:#ac0909;
+        font-size:0.9rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDate {
+        display:block;
+        font-weight:500;
+        opacity:0.8;
     }
 
     .message {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        width:340px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        font-size:1rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .message1 {
+    .mediaIcons {
         width:100%;
-        height:6rem;
+        height:3rem;
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
+        justify-content:center;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .message2 {
-        width:100%;
-        height:6rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:4rem;
-        height:4rem;
+        justify-content:center;
+        width:2rem;
+        height:2rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1rem;
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
         color:#fff;
     }
 
-    .preacherName {
-        color:#fff;
-        font-size:1rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.9rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:90%;
+        height:auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
+        justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
+    .galleryMessageListContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
     }
 
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
+    .messageDisplayType {
+        display:none;
+        align-self:self-end;
     }
 
-    .deaconsList {
+    .gridAndFlex {
+        justify-self:end;
+        width:2rem;
+        height:2rem;
+        margin:0rem 1rem 0rem 0rem;
+    }
+
+    .displayToggle {
+        display:none;
+        float:right;
+        width:100%;
+        height:100%;
+    }
+
+    .messageGallery {
         width:100%;
         height:auto;
         display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto auto auto;
-        justify-content:center;
+        justify-items:center;
+        align-items:center;
         grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:23rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:39rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0.5rem 1rem 0.5rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:100%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        align-items:center;
-        justify-items:center;
-        padding:0rem 0.5rem 0rem 0.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
+    .messageImg {
         height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
     }
 
-    .unionHeader {
+    .messageContentContainer {
+        height:50%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageHeader {
         font-size:1.1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .unionText {
+    .messagePreacher {
+        color:#ac0909;
         font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.7rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .messageDateAndMonth {
+        display:block;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+    }
+
+    .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageReadmoreBtn {
+        font-size:0.9rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+    }
+
+    .messageReadmore {
+        color:#fff;
+        position:relative;
     }
 
     .event {
@@ -3521,7 +3281,7 @@
         display:none;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -3531,290 +3291,225 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
+        grid-template-rows:auto auto;
         justify-items:center;
-        width:85%;
-        padding:2rem 0rem 1rem 0rem;
+        align-items:start;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:17rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
-        height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
+    .messageFirstText {
         font-size:1.1rem;
         color:#ac0909;
+        font-weight:600;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
+    .currentMessage {
+        width:100%;
+        height:auto;
+        border-radius:0.5rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        margin:1rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
+    }
+
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.3rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
     }
 
-    .aboutContentMainText {
-        font-size:1rem;
+    .preacher {
+        color:#ac0909;
+        font-size:0.9rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 1rem;
+    }
+
+    .messageDate {
+        display:block;
+        font-weight:500;
+        opacity:0.8;
     }
 
     .message {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        width:340px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        font-size:1.1rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .message1 {
+    .mediaIcons {
         width:100%;
-        height:6rem;
+        height:3rem;
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
+        justify-content:center;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .message2 {
-        width:100%;
-        height:6rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:4rem;
-        height:4rem;
+        justify-content:center;
+        width:2rem;
+        height:2rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1rem;
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
         color:#fff;
     }
 
-    .preacherName {
-        color:#fff;
-        font-size:1rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.9rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:85%;
+        height:auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
+        justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
+    .galleryMessageListContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
     }
 
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
+    .messageDisplayType {
+        display:none;
+        align-self:self-end;
     }
 
-    .deaconsList {
+    .gridAndFlex {
+        justify-self:end;
+        width:2rem;
+        height:2rem;
+        margin:0rem 1rem 0rem 0rem;
+    }
+
+    .displayToggle {
+        display:none;
+        float:right;
+        width:100%;
+        height:100%;
+    }
+
+    .messageGallery {
         width:100%;
         height:auto;
         display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto auto auto;
-        justify-content:center;
+        justify-items:center;
+        align-items:center;
         grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:23rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0.5rem 1rem 0.5rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:90%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        align-items:center;
-        justify-items:center;
-        padding:0rem 0.5rem 0rem 0.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
+    .messageImg {
         height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
     }
 
-    .unionHeader {
+    .messageContentContainer {
+        height:50%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageHeader {
+        font-size:1.3rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messagePreacher {
+        color:#ac0909;
         font-size:1.1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.7rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .messageDateAndMonth {
+        display:block;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+    }
+
+    .messageContent {
+        font-size:1.1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageReadmoreBtn {
+        font-size:1.1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+    }
+
+    .messageReadmore {
+        color:#fff;
+        position:relative;
     }
 
     .event {
@@ -4366,7 +4061,7 @@
         display:none;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -4376,291 +4071,488 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
+        grid-template-rows:auto auto;
         justify-items:center;
-        width:546px;
-        padding:2rem 0rem 1rem 0rem;
+        align-items:start;
+        width:576px;
+        padding:1rem 1rem 1rem 1rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:19rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .messageFirstText {
+        font-size:1.1rem;
+        color:#ac0909;
+        font-weight:600;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentText {
+    .currentMessage {
         width:100%;
         height:auto;
+        border-radius:0.5rem;
         display:flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
         align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        margin:1rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentFirstText {
+    .currentMessageFirstText {
+        color:#000;
+        font-size:1.3rem;
         font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
+    }
+
+    .preacher {
         color:#ac0909;
+        font-size:0.9rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
     }
 
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.1rem;
+    .messageDate {
+        display:block;
+        font-weight:500;
+        opacity:0.8;
     }
 
     .message {
+        font-size:1.1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .mediaIcons {
+        width:100%;
+        height:3rem;
         display:flex;
-        flex-direction:row;
-        align-items:flex-start;
+        align-items:center;
         justify-content:center;
-        width:510px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        margin:1rem 0rem 2rem 0rem;
     }
 
-    .message1 {
-        width:50%;
-        height:6rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:50%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:3.5rem;
-        height:3.5rem;
+        justify-content:center;
+        width:2.5rem;
+        height:2.5rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
+        color:#fff;
+    }
+
+    .sermonButton {
+        display:block;
+        width:15rem;
+        height:3rem;
+        color:#fff;
+        font-size:1.1rem;
+        font-style: italic;
+        font-weight: bold;
+        background:#ac0909;
+        border-radius:0.7rem;
         display:flex;
+        justify-content: center;
         align-items:center;
-        justify-content:center;
+        margin:-1.5rem 0rem 0rem 0rem;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:0.9rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:0.9rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.8rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
+        flex-direction:column;
         align-items:center;
         justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateContainer {
-        width:560px;
+    .galleryMessageListContainer {
+        width:576px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
+    }
+
+    .messageDisplayType {
+        display:none;
+    }
+
+    .gridAndFlex {
+        display:block;
+        justify-self:end;
+        width:5rem;
+        height:1.5rem;
+        margin:0rem 1rem 1rem 0rem;
+    }
+
+    .displayToggle {
+        display:block;
+        float:right;
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+
+    .displayToggle::after {
+        content:"Grid View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:2rem;
+    }
+
+    .messageDisplayType:checked ~ .gridAndFlex .displayToggle::after {
+        content:"List View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 {
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
+        align-items: flex-start;
+        width:100%;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .diaconateFirstText {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageHeader {
+        font-size:1rem;
         font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messagePreacher {
         color:#ac0909;
+        font-size:0.9rem;
         font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
-        text-align:center;
-        font-style: italic;
         margin:0.5rem 0rem 0rem 0rem;
     }
 
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        justify-content:center;
-        grid-gap:1rem;
-        padding:2rem 0rem 1rem 0rem;
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageContent {
+        font-size:0.9rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:21rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .messageDisplayType:checked ~ .messageGallery .message2 {
         display:flex;
         flex-direction:column;
         align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
         justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
     }
 
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageHeader {
+        font-size:1rem;
         font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .organisation {
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:0.9rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageContent {
+        font-size:0.9rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
-        min-height:10vh;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageHeader {
+        font-size:1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:0.9rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageContent {
+        font-size:0.9rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageHeader {
+        font-size:1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:0.9rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageContent {
+        font-size:0.9rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageGallery {
+        width:100%;
+        height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
+        grid-template-rows:auto auto auto auto;
         justify-items:center;
-        padding:1rem 0rem 1rem 0rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:560px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        grid-gap:1rem;
         align-items:center;
-        justify-items:center;
-        padding:0rem 0rem 0rem 0rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        grid-gap:2rem;
+        transition: all .1s linear;
     }
 
-    .union {
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
+        height:17rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+        transition: all .1s linear;
     }
 
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
+    .messageImg {
+        height:100%;
+        width:35%;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
+        background:url(./images/Placeholder3.png) center/cover;
+        transition: all .1s linear;
     }
 
-    .unionHeader {
+    .messageContentContainer {
+        height:100%;
+        width:65%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 1rem;
+        transition: all .1s linear;
+    }
+
+    .messageHeader {
         font-size:1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+        transition: all .1s linear;
     }
 
-    .unionText {
+    .messagePreacher {
+        color:#ac0909;
         font-size:0.9rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:0.9rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
+        transition: all .1s linear;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.5rem;
-        height:1px;
-        position:absolute;
-        top:0.85rem;
-        left:1rem;
-        background:#8b0000;
+    .messageDateAndMonth {
+        display:block;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+        transition: all .1s linear;
+    }
+
+    .messageContent {
+        font-size:0.9rem;
+        margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+   .messageReadmoreBtn {
+       margin:0.7rem 0rem 0rem 0rem;
+       width:6rem;
+       height:2.5rem;
+       background:#ac0909;
+       border-radius:0.5rem;
+       transition: all .1s linear;
+    }
+    
+    .messageReadmore {
+        font-size:0.9rem;
+        color:#fff;
+        position:relative;
+        transition: all .1s linear;
     }
 
     .event {
@@ -5187,7 +5079,7 @@
         justify-content:center;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -5197,294 +5089,487 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2.5rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        grid-gap:2rem 1rem;
         justify-items:center;
-        align-items:center;
+        align-items:start;
         width:768px;
-        padding:3rem 1rem 1rem 1rem;
+        padding:2rem 1rem 1rem 1rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .messageFirstText {
+        font-size:1.5rem;
+        color:#ac0909;
+        font-weight:900;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentText {
+    .currentMessage {
         width:100%;
         height:auto;
         display:flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
         align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        border-radius:0.5rem;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        margin:2rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
     }
 
-    .aboutContentMainText {
-        font-size:1.1rem;
+    .preacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDate {
+        display:inline-block;
+        font-weight:500;
+        opacity:0.8;
+        margin:0rem 0rem 0rem 1.5rem;
     }
 
     .message {
-        grid-area:2/1/3/3;
+        font-size:1.1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .mediaIcons {
+        width:100%;
+        height:3rem;
         display:flex;
-        flex-direction:row;
-        align-items:flex-start;
+        align-items:center;
         justify-content:center;
-        width:728px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        margin:1rem 0rem 4rem 0rem;
     }
 
-    .message1 {
-        width:100%;
-        height:7rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
+        justify-content:center;
+        width:2.5rem;
+        height:2.5rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 1rem 0rem 1rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.2rem;
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
         color:#fff;
     }
 
-    .preacherName {
+    .sermonButton {
+        display:block;
+        width:15rem;
+        height:3rem;
         color:#fff;
         font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
+        background:#ac0909;
+        border-radius:0.7rem;
         display:flex;
+        justify-content: center;
+        align-items:center;
+        margin:-1.5rem 0rem 0rem 0rem;
+    }
+
+    .galleryMessageList {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
         align-items:center;
         justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateContainer {
+    .galleryMessageListContainer {
         width:768px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
+    }
+
+    .messageDisplayType {
+        display:none;
+    }
+
+    .gridAndFlex {
+        display:block;
+        justify-self:end;
+        width:5rem;
+        height:1.5rem;
+        margin:0rem 1rem 1rem 0rem;
+    }
+
+    .displayToggle {
+        display:block;
+        float:right;
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+
+    .displayToggle::after {
+        content:"Grid View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:2rem;
+    }
+
+    .messageDisplayType:checked ~ .gridAndFlex .displayToggle::after {
+        content:"List View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 {
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
+        align-items: flex-start;
+        width:100%;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .diaconateFirstText {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
         font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messagePreacher {
         color:#ac0909;
+        font-size:1rem;
         font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
         margin:0.5rem 0rem 0rem 0rem;
     }
 
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:25rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .messageDisplayType:checked ~ .messageGallery .message2 {
         display:flex;
         flex-direction:column;
         align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
         justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
     }
 
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
         font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .organisation {
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
-        min-height:10vh;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .messageGallery {
+        width:100%;
+        height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
+        grid-template-rows:auto auto auto auto;
         justify-items:center;
-        padding:1rem 0rem 1rem 0rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1.1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.7rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:768px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        grid-gap:2rem 1rem;
         align-items:center;
-        justify-items:center;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        grid-gap:2rem;
+        transition: all .1s linear;
     }
 
-    .union {
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
+        height:17rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+        transition: all .1s linear;
     }
 
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
+    .messageImg {
+        height:100%;
+        width:35%;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
+        background:url(./images/Placeholder3.png) center/cover;
+        transition: all .1s linear;
     }
 
-    .unionHeader {
+    .messageContentContainer {
+        height:100%;
+        width:65%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 1rem;
+        transition: all .1s linear;
+    }
+
+    .messageHeader {
         font-size:1.1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+        transition: all .1s linear;
     }
 
-    .unionText {
+    .messagePreacher {
+        color:#ac0909;
         font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
+        transition: all .1s linear;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:5rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .messageDateAndMonth {
+        display:block;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+        transition: all .1s linear;
+    }
+
+    .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+    
+    .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+        transition: all .1s linear;
+    }
+    
+    .messageReadmore {
+        font-size:1rem;
+        color:#fff;
+        transition: all .1s linear;
+        position:relative;
     }
 
     .event {
@@ -6013,7 +6098,7 @@
         justify-content:center;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -6023,293 +6108,487 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2.5rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
         justify-items:center;
-        align-items:center;
+        align-items:start;
         width:900px;
-        padding:3rem 1rem 1rem 1rem;
+        padding:2rem 1rem 1rem 1rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .messageFirstText {
+        font-size:1.5rem;
+        color:#ac0909;
+        font-weight:900;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentText {
+    .currentMessage {
         width:100%;
         height:auto;
         display:flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
         align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        border-radius:0.5rem;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        margin:2rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
     }
 
-    .aboutContentMainText {
-        font-size:1.1rem;
+    .preacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDate {
+        display:inline-block;
+        font-weight:500;
+        opacity:0.8;
+        margin:0rem 0rem 0rem 1.5rem;
     }
 
     .message {
-        grid-area:2/1/3/3;
+        font-size:1.1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .mediaIcons {
+        width:100%;
+        height:3rem;
         display:flex;
-        flex-direction:row;
-        align-items:flex-start;
+        align-items:center;
         justify-content:center;
-        width:800px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        margin:1rem 0rem 4rem 0rem;
     }
 
-    .message1 {
-        width:100%;
-        height:7rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
+        justify-content:center;
+        width:2.5rem;
+        height:2.5rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 1rem 0rem 1rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.2rem;
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
         color:#fff;
     }
 
-    .preacherName {
+    .sermonButton {
+        display:block;
+        width:15rem;
+        height:3rem;
         color:#fff;
         font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
+        background:#ac0909;
+        border-radius:0.7rem;
         display:flex;
+        justify-content: center;
+        align-items:center;
+        margin:-1.5rem 0rem 0rem 0rem;
+    }
+
+    .galleryMessageList {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
         align-items:center;
         justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateContainer {
+    .galleryMessageListContainer {
         width:900px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
+    }
+
+    .messageDisplayType {
+        display:none;
+    }
+
+    .gridAndFlex {
+        display:block;
+        justify-self:end;
+        width:5rem;
+        height:1.5rem;
+        margin:0rem 1rem 1rem 0rem;
+    }
+
+    .displayToggle {
+        display:block;
+        float:right;
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+
+    .displayToggle::after {
+        content:"Grid View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:2rem;
+    }
+
+    .messageDisplayType:checked ~ .gridAndFlex .displayToggle::after {
+        content:"List View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 {
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
+        align-items: flex-start;
+        width:100%;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageHeader {
         font-size:1.2rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1.1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
     }
 
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:22rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:1.5rem 0rem 1.5rem 0rem;
-        background:url(./images/Rectangle15.svg) top left top/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:100%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:3rem 2rem;
-        align-items:center;
-        justify-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 1rem 1rem 1rem;
-    }
-
-    .union {
-        width:100%;
-        height:29rem;
-        margin:0rem 0rem 0rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageContent {
         font-size:1.1rem;
-        text-align:center;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageReadmoreBtn {
         margin:0.7rem 0rem 0rem 0rem;
     }
 
-    .unionText {
-        font-size:0.9rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
+    .messageDisplayType:checked ~ .messageGallery .message2 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .unionDetails {
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageHeader {
+        font-size:1.2rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1.1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageContent {
+        font-size:1.1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageHeader {
+        font-size:1.2rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1.1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageContent {
+        font-size:1.1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:36rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageHeader {
+        font-size:1.2rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1.1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageContent {
+        font-size:1.1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageReadmoreBtn {
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .messageGallery {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:2rem;
+        transition: all .1s linear;
+    }
+
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:17rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+        transition: all .1s linear;
+    }
+
+    .messageImg {
+        height:100%;
+        width:35%;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
+        background:url(./images/Placeholder3.png) center/cover;
+        transition: all .1s linear;
+    }
+
+    .messageContentContainer {
+        height:100%;
+        width:65%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 1rem;
+        transition: all .1s linear;
+    }
+
+    .messageHeader {
+        font-size:1.2rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+    .messagePreacher {
+        color:#ac0909;
+        font-size:1.1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+    .messageDateAndMonth {
         display:block;
-        font-size:0.9rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.8rem 0rem 0rem 0rem;
-        position:relative;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+        transition: all .1s linear;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.4rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .messageContent {
+        font-size:1.1rem;
+        margin:0.3rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+    .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+        transition: all .1s linear;
+    }
+    
+    .messageReadmore {
+        font-size:1rem;
+        color:#fff;
+        transition: all .1s linear;
+        position:relative;
     }
 
     .event {
@@ -6843,7 +7122,7 @@
         justify-content:center;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -6853,290 +7132,488 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2.5rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
         justify-items:center;
-        align-items:center;
+        align-items:start;
         width:1024px;
-        padding:3rem 1rem 1rem 1rem;
+        padding:2rem 1.5rem 1rem 1.5rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .messageFirstText {
+        font-size:1.5rem;
+        color:#ac0909;
+        font-weight:900;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentText {
+    .currentMessage {
         width:100%;
         height:auto;
         display:flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
         align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        border-radius:0.5rem;
+        padding:1rem 1rem 1rem 1rem;
+        margin:2rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
     }
 
-    .aboutContentMainText {
-        font-size:1.1rem;
+    .preacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDate {
+        display:inline-block;
+        font-weight:500;
+        opacity:0.8;
+        margin:0rem 0rem 0rem 1.5rem;
     }
 
     .message {
-        grid-area:2/1/3/3;
+        font-size:1.1rem;
+        margin:1rem 0rem 1rem 0rem;
+    }
+
+    .mediaIcons {
+        width:100%;
+        height:3rem;
         display:flex;
-        flex-direction:row;
-        align-items:flex-start;
+        align-items:center;
         justify-content:center;
-        width:800px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        margin:1rem 0rem 5rem 0rem;
     }
 
-    .message1 {
-        width:100%;
-        height:7rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
+        justify-content:center;
+        width:2.5rem;
+        height:2.5rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 1rem 0rem 1rem;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
+        color:#fff;
+    }
+
+    .sermonButton {
+        display:block;
+        width:18rem;
+        height:4rem;
+        color:#fff;
+        font-size:1.3rem;
+        background:#ac0909;
+        border-radius:0.7rem;
         display:flex;
+        justify-content: center;
         align-items:center;
-        justify-content:center;
+        margin:-2rem 0rem 0rem 0rem;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.2rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
+        flex-direction:column;
         align-items:center;
         justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateContainer {
-        width:950px;
+    .galleryMessageListContainer {
+        width:1024px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
+    }
+
+    .messageDisplayType {
+        display:none;
+    }
+
+    .gridAndFlex {
+        display:block;
+        justify-self:end;
+        width:5rem;
+        height:1.5rem;
+        margin:0rem 1rem 1rem 0rem;
+    }
+
+    .displayToggle {
+        display:block;
+        float:right;
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+
+    .displayToggle::after {
+        content:"Grid View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:4rem 2rem;
+    }
+
+    .messageDisplayType:checked ~ .gridAndFlex .displayToggle::after {
+        content:"List View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 {
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
+        align-items: flex-start;
+        width:100%;
+        height:39rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .diaconateFirstText {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
         font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messagePreacher {
         color:#ac0909;
+        font-size:1rem;
         font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
         margin:0.5rem 0rem 0rem 0rem;
     }
 
-    .deaconsList {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:39rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:39rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:39rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageGallery {
         width:100%;
         height:auto;
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:4rem 2rem;
+        transition: all .1s linear;
+        padding:0rem 0rem 4rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:22rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         align-items:center;
         justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
+        align-items: flex-start;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:17rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 40px #000;
+        transition: all .1s linear;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
+    .messageImg {
+        height:100%;
+        width:35%;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
+        background:url(./images/Placeholder3.png) center/cover;
+        transition: all .1s linear;
     }
 
-    .organisation {
-        width:100%;
-        min-height:10vh;
+    .messageContentContainer {
+        height:100%;
+        width:60%;
         display:flex;
         flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:1rem 1rem 1rem 1rem;
-        background:url(./images/Rectangle15.svg) top left/cover;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:1.5rem 0.5rem 1.5rem 1rem;
+        transition: all .1s linear;
     }
 
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-family:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:1024px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:2rem;
-        margin:2rem 0rem 3rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:32rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
+    .messageHeader {
         font-size:1.1rem;
-        text-align:center;
-        margin:0.5rem 0rem 0rem 0rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+        transition: all .1s linear;
     }
 
-    .unionText {
+    .messagePreacher {
+        color:#ac0909;
         font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.3rem 0rem 0.7rem 0rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
     }
 
-    .unionDetails {
+    .messageDateAndMonth {
         display:block;
-        font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+        transition: all .1s linear;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.9rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+    .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+        transition: all .1s linear;
+    }
+    
+    .messageReadmore {
+        font-size:1rem;
+        color:#fff;
+        transition: all .1s linear;
+        position:relative;
     }
 
     .event {
@@ -7673,7 +8150,7 @@
         justify-content:center;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -7683,291 +8160,488 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
         font-size:2.5rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
         justify-items:center;
-        align-items:center;
-        width:1180px;
-        padding:3rem 1rem 1rem 1rem;
+        align-items:start;
+        width:1150px;
+        padding:2rem 1.5rem 1rem 1.5rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .messageFirstText {
+        font-size:1.5rem;
+        color:#ac0909;
+        font-weight:900;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentText {
+    .currentMessage {
         width:100%;
         height:auto;
         display:flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
         align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        border-radius:0.5rem;
+        padding:1rem 1rem 1rem 1rem;
+        margin:2rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.5rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
+    }
+
+    .preacher {
         color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
     }
 
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.8rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.4rem;
+    .messageDate {
+        display:inline-block;
+        font-weight:500;
+        opacity:0.8;
+        margin:0rem 0rem 0rem 1.5rem;
     }
 
     .message {
-        grid-area:2/1/3/3;
+        font-size:1.1rem;
+        margin:1rem 0rem 1rem 0rem;
+    }
+
+    .mediaIcons {
+        width:100%;
+        height:3rem;
         display:flex;
-        flex-direction:row;
-        align-items:flex-start;
+        align-items:center;
         justify-content:center;
-        gap:2rem;
-        width:1000px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        margin:1rem 0rem 5rem 0rem;
     }
 
-    .message1 {
-        width:100%;
-        height:8rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:8rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
+        justify-content:center;
+        width:2.5rem;
+        height:2.5rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 1rem 0rem 2rem;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
+        color:#fff;
+    }
+
+    .sermonButton {
+        display:block;
+        width:18rem;
+        height:4rem;
+        color:#fff;
+        font-size:1.3rem;
+        background:#ac0909;
+        border-radius:0.7rem;
         display:flex;
+        justify-content: center;
         align-items:center;
-        justify-content:center;
+        margin:-2rem 0rem 0rem 0rem;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.5rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
+        flex-direction:column;
         align-items:center;
         justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateContainer {
-        width: 1150px;
+    .galleryMessageListContainer {
+        width:1150px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
+    }
+
+    .messageDisplayType {
+        display:none;
+    }
+
+    .gridAndFlex {
+        display:block;
+        justify-self:end;
+        width:5rem;
+        height:1.5rem;
+        margin:0rem 1rem 1rem 0rem;
+    }
+
+    .displayToggle {
+        display:block;
+        float:right;
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+
+    .displayToggle::after {
+        content:"Grid View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:4rem 2rem;
+    }
+
+    .messageDisplayType:checked ~ .gridAndFlex .displayToggle::after {
+        content:"List View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 {
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
+        align-items: flex-start;
+        width:100%;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .diaconateFirstText {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
         font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messagePreacher {
         color:#ac0909;
+        font-size:1rem;
         font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
         margin:0.5rem 0rem 0rem 0rem;
     }
 
-    .deaconsList {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:37rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageGallery {
         width:100%;
         height:auto;
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:4rem 2rem;
+        transition: all .1s linear;
+        padding:0rem 0rem 4rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:25rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         align-items:center;
         justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
+        align-items: flex-start;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:17rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 40px #000;
+        transition: all .1s linear;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
+    .messageImg {
+        height:100%;
+        width:35%;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
+        background:url(./images/Placeholder3.png) center/cover;
+        transition: all .1s linear;
     }
 
-    .organisation {
-        width:100%;
-        min-height:10vh;
+    .messageContentContainer {
+        height:100%;
+        width:60%;
         display:flex;
         flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:1rem 1rem 1rem 1rem;
-        background:url(./images/Rectangle15.svg) top left/cover;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:1.5rem 0.5rem 1.5rem 1rem;
+        transition: all .1s linear;
     }
 
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-family:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:1150px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:2rem;
-        margin:2rem 0rem 3rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:32rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
+    .messageHeader {
         font-size:1.1rem;
-        text-align:center;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+    .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
     }
 
-    .unionText {
-        font-size:1.1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
+    .messageDateAndMonth {
         display:block;
-        font-size:1.1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+        transition: all .1s linear;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:5.2rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+    .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+        transition: all .1s linear;
+    }
+    
+    .messageReadmore {
+        font-size:1rem;
+        color:#fff;
+        transition: all .1s linear;
+        position:relative;
     }
 
     .event {
@@ -8504,7 +9178,7 @@
         justify-content:center;
     }
 
-    .hero{
+    .galleryBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -8514,292 +9188,488 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .galleryBannerMainText {
         color:#fff;
-        font-size:2.5rem;
+        font-size:3rem;
         font-family: 'Inter', sans-serif;
-        text-align:center;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .galleryMessage {
         width:100%;
         min-height:10vh;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+        justify-content:center;
     }
 
-    .aboutContentContainer {
+    .galleryMessageContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
         justify-items:center;
-        align-items:center;
-        width:1300px;
-        padding:3rem 1rem 1rem 1rem;
+        align-items:start;
+        width:1350px;
+        padding:2rem 1.5rem 1rem 1.5rem;
+        margin:0rem 0rem 0rem 0rem;
     }
 
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .messageFirstText {
+        font-size:1.5rem;
+        color:#ac0909;
+        font-weight:900;
+        font-family: 'inter', sans-serif;
     }
 
-    .aboutContentText {
+    .currentMessage {
         width:100%;
         height:auto;
         display:flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
         align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        border-radius:0.5rem;
+        padding:1rem 2rem 1rem 2rem;
+        margin:2rem 0rem 0rem 0rem;
+        box-shadow:2px 2px 20px #000;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
+    .currentMessageFirstText {
+        color:#000;
         font-size:1.5rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        font-weight:600;
+        text-align:center;
+    }
+
+    .preacher {
         color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        padding:0.5rem 0rem 0rem 0rem;
     }
 
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.8rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.4rem;
+    .messageDate {
+        display:inline-block;
+        font-weight:500;
+        opacity:0.8;
+        margin:0rem 0rem 0rem 1.5rem;
     }
 
     .message {
-        grid-area:2/1/3/3;
+        font-size:1.2rem;
+        margin:1rem 0rem 1rem 0rem;
+    }
+
+    .mediaIcons {
+        width:100%;
+        height:3rem;
         display:flex;
-        flex-direction:row;
-        align-items:flex-start;
+        align-items:center;
         justify-content:center;
-        gap:2rem;
-        width:1000px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        margin:1rem 0rem 5rem 0rem;
     }
 
-    .message1 {
-        width:100%;
-        height:8rem;
+    .mediaButton {
         display:flex;
-        flex-direction:row;
         align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:8rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
+        justify-content:center;
+        width:2.5rem;
+        height:2.5rem;
         border-radius:50%;
         background:#ac0909;
-        margin:0rem 1rem 0rem 2rem;
+        margin:0rem 0.7rem 0rem 0.7rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .fa-play,
+    .fa-pause,
+    .fa-download,
+    .fa-share-nodes {
+        color:#fff;
+    }
+
+    .sermonButton {
+        display:block;
+        width:18rem;
+        height:4rem;
+        color:#fff;
+        font-size:1.3rem;
+        background:#ac0909;
+        border-radius:0.7rem;
         display:flex;
+        justify-content: center;
         align-items:center;
-        justify-content:center;
+        margin:-2rem 0rem 0rem 0rem;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.5rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.2rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1.1rem;
-    }
-
-    .diaconate {
+    .galleryMessageList {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
+        flex-direction:column;
         align-items:center;
         justify-content:center;
+        padding:1rem 0rem 2rem 0rem;
     }
 
-    .diaconateContainer {
-        width: 1150px;
+    .galleryMessageListContainer {
+        width:1350px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 0rem 1rem;
+    }
+
+    .messageDisplayType {
+        display:none;
+    }
+
+    .gridAndFlex {
+        display:block;
+        justify-self:end;
+        width:5rem;
+        height:1.5rem;
+        margin:0rem 1rem 1rem 0rem;
+    }
+
+    .displayToggle {
+        display:block;
+        float:right;
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+
+    .displayToggle::after {
+        content:"Grid View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:4rem 4rem;
+    }
+
+    .messageDisplayType:checked ~ .gridAndFlex .displayToggle::after {
+        content:"List View";
+        position:absolute;
+        text-decoration: underline;
+        color:#ac0909;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 {
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
+        align-items: flex-start;
+        width:100%;
+        height:35rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
     }
 
-    .diaconateFirstText {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
         font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messagePreacher {
         color:#ac0909;
+        font-size:1rem;
         font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
         margin:0.5rem 0rem 0rem 0rem;
     }
 
-    .deaconsList {
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message1 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
         width:100%;
+        height:35rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message2 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:35rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message3 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:100%;
+        height:35rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 20px #000;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageImg {
+        height:45%;
+        width:100%;
+        border-radius:0.5rem 0.5rem 0rem 0rem;
+        background:url(./images/Placeholder3.png) center/cover;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer {
+        height:55%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+    
+    .messageDisplayType:checked ~ .messageGallery .message4 .messageContentContainer .messageReadmoreBtn {
+        margin:0.3rem 0rem 0rem 0rem;
+    }
+
+    .messageGallery {
+        width:90%;
         height:auto;
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:4rem 2rem;
+        transition: all .1s linear;
+        padding:0rem 0rem 4rem 0rem;
     }
 
-    .deacon {
-        width:100%;
-        height:25rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+    .message1,
+    .message2,
+    .message3,
+    .message4 {
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         align-items:center;
         justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
+        align-items: flex-start;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:17rem;
+        border-radius:0.5rem;
+        box-shadow: 2px 2px 40px #000;
+        transition: all .1s linear;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
+    .messageImg {
+        height:100%;
+        width:35%;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
+        background:url(./images/Placeholder3.png) center/cover;
+        transition: all .1s linear;
     }
 
-    .organisation {
-        width:100%;
-        min-height:10vh;
+    .messageContentContainer {
+        height:100%;
+        width:60%;
         display:flex;
         flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:1rem 1rem 1rem 1rem;
-        background:url(./images/Rectangle15.svg) top left/cover;
+        justify-content:space-between;
+        align-items: flex-start;
+        padding:1.5rem 0.5rem 1.5rem 1rem;
+        transition: all .1s linear;
     }
 
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
+    .messageHeader {
+        font-size:1.1rem;
+        font-family:'inter', sans-serif;
+        font-style:italic;
+        margin:0rem 0rem 0rem 0rem;
+        transition: all .1s linear;
     }
 
-    .organisationHeader {
-        font-family:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:1300px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:2rem;
-        margin:2rem 0rem 3rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:32rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
-        font-size:1.2rem;
-        text-align:center;
-        margin:0.7rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:1.2rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1.2rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
+    .messagePreacher {
+        color:#ac0909;
+        font-size:1rem;
+        font-weight:600;
         margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
+        transition: all .1s linear;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:5.5rem;
-        height:1px;
-        position:absolute;
-        top:1rem;
-        left:1rem;
-        background:#8b0000;
+    .messageDateAndMonth {
+        display:block;
+        font-weight:500;
+        opacity:0.7;
+        margin:0rem 0rem 0rem 0.5rem;
+        transition: all .1s linear;
+    }
+
+    .messageContent {
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+        transition: all .1s linear;
+    }
+
+    .messageReadmoreBtn {
+        margin:0.5rem 0rem 0rem 0rem;
+        width:6rem;
+        height:2.5rem;
+        background:#ac0909;
+        border-radius:0.5rem;
+        transition: all .1s linear;
+    }
+    
+    .messageReadmore {
+        font-size:1rem;
+        color:#fff;
+        transition: all .1s linear;
+        position:relative;
     }
 
     .event {
@@ -9222,9 +10092,9 @@
 }
 
 @media screen and (min-height:800px) {
-    .hero{
+    .galleryBanner {
         width:100%;
-        height:40rem;
+        height:640px;
         display:flex;
         flex-direction:column;
         align-items:center;
