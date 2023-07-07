@@ -1061,14 +1061,17 @@
     align-items:center;
     justify-content:space-between;
     width:90%;
-    padding:0rem 0rem 0rem 1rem;
     margin:1rem 0rem 0rem 0rem;
-    background: #fff;
-    border-radius:0.5rem;
 }
 
 .newsletterEmail {
+    padding:0rem 0rem 0rem 1rem;
     font-size:0.9rem;
+    height:2.5rem;
+    width:100%;
+    border:1px solid #b3aeae;
+    border-radius:0.5rem 0rem 0rem 0.5rem;
+    background:#fff;
 }
 
 .newsletterButton {
@@ -2102,14 +2105,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
     }
-
+    
     .newsletterEmail {
+        padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
+        height:3rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -2122,11 +2128,11 @@
     }
 
     .copyright-Container {
-            width:100%;
-            background:#020d1e;
-            display:flex;
-            justify-content:center;
-        }
+        width:100%;
+        background:#020d1e;
+        display:flex;
+        justify-content:center;
+    }
 
     .copyrightContainer {
         width:100%;
@@ -3144,14 +3150,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
     }
-
+    
     .newsletterEmail {
+        padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
+        height:3rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -3164,11 +3173,11 @@
     }
 
     .copyright-Container {
-            width:100%;
-            background:#020d1e;
-            display:flex;
-            justify-content:center;
-        }
+        width:100%;
+        background:#020d1e;
+        display:flex;
+        justify-content:center;
+    }
 
     .copyrightContainer {
         width:100%;
@@ -4179,14 +4188,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
     }
-
+    
     .newsletterEmail {
+        padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
+        height:2.5rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -5219,14 +5231,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
     }
-
+    
     .newsletterEmail {
+        padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
+        height:2.5rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -6277,14 +6292,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
     }
-
+    
     .newsletterEmail {
+        padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
+        height:2.5rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -6427,6 +6445,7 @@
         align-items:center;
         justify-content:center;
     }
+
     .hero {
         width:100%;
         height:100vh;
@@ -7311,14 +7330,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
     }
-
+    
     .newsletterEmail {
+        padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
+        height:2.5rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -8358,14 +8380,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
     }
-
+    
     .newsletterEmail {
+        padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
+        height:2.5rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -9403,14 +9428,17 @@
         align-items:center;
         justify-content:space-between;
         width:90%;
-        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
-        background: #fff;
         border-radius:0.5rem;
     }
 
     .newsletterEmail {
-        font-size:1rem;
+        padding:0rem 0rem 0rem 1rem;
+        font-size:0.9rem;
+        height:3.5rem;
+        width:100%;
+        border:1px solid #b3aeae;
+        background:#fff;
     }
 
     .newsletterButton {
@@ -10423,20 +10451,23 @@
     }
 
     .subscribe {
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        width:90%;
-        padding:0rem 0rem 0rem 1rem;
-        margin:1rem 0rem 0rem 0rem;
-        background: #fff;
-        border-radius:0.5rem;
-    }
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    width:90%;
+    margin:1rem 0rem 0rem 0rem;
+    border-radius:0.5rem;
+}
 
-    .newsletterEmail {
-        font-size:0.7rem;
-    }
+.newsletterEmail {
+    padding:0rem 0rem 0rem 1rem;
+    font-size:0.7rem;
+    height:2rem;
+    width:100%;
+    border:1px solid #b3aeae;
+    background:#fff;
+}
     
     .newsletterButton {
         background:#8b0000;

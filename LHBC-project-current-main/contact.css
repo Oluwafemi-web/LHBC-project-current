@@ -131,7 +131,7 @@
     display:none;
 }
 
-.hero{
+.contactBanner {
     width:100%;
     height:80vh;
     display:flex;
@@ -141,284 +141,230 @@
     background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
 }
 
-.heroMainText {
+.contactBannerMainText {
     color:#fff;
     font-size:2rem;
     font-family: 'Inter', sans-serif;
     margin:10rem 0rem 0rem 0rem;
 }
 
-.aboutContent {
+.contactCard {
     width:100%;
-    min-height:10vh;
+    height:auto;
     display:flex;
     flex-direction:column;
-    justify-content: flex-start;
     align-items:center;
+   
 }
 
-.aboutContentContainer {
+.contactCardContainer {
     display:grid;
     grid-template-columns:1fr;
     grid-template-rows:auto auto auto;
-    padding:1rem 0.5rem 1rem 0.5rem;
-}
-
-.aboutContentImg {
-    width:100%;
-    height:15rem;
-    background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-}
-
-.aboutContentText {
+    justify-items:center;
+    align-items:center;
+    grid-gap:1rem;
     width:100%;
     height:auto;
+    padding:1rem 1rem 1rem 1rem;
+}
+
+.location,
+.phoneNumbers,
+.emailAddress {
+    width:100%;
+    height:10rem;
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
-    margin:1rem 0rem 1rem 0rem;
+    justify-content:flex-start;
+    background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
+    border-radius:1rem;
+    padding:1rem;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-location-dot {
+    margin:0.7rem 0rem 0rem 0rem;
+    font-size:1.5rem;
+    color:#ac0909;
+}
+
+.locationFirstText {
+    color:#fff;
+    font-family: 'inter', sans-serif;
+    font-size:1rem;
+    margin:0.5rem 0rem 0rem 0rem;
+    font-weight:900;
+}
+
+.locationAddress {
+    color:#fff;
+    font-size:0.8rem;
+    text-align:center;
+    font-family:'inter', sans-serif;
+    margin:0.5rem 0rem 0rem 0rem;
+}
+
+.locationFirstSpan {
+    display:block;
+}
+
+.locationSecondSpan {
+    display:block;
+}
+
+.locationThirdSpan {
+    display:block;
+}
+
+.phoneNumberFirstText {
+    color:#fff;
+    font-family: 'inter', sans-serif;
+    font-size:1rem;
+    margin:1rem 0rem 0rem 0rem;
+    font-weight:900;
+}
+
+.phoneNumber1 {
+    color:#fff;
+    font-family: 'inter', sans-serif;
+    font-size:0.7rem;
+    margin:0.7rem 0rem 0rem 0rem;
+}
+
+.phoneNumber2 {
+    color:#fff;
+    font-family: 'inter', sans-serif;
+    font-size:0.7rem;
+    margin:0.2rem 0rem 0rem 0rem;
+}
+
+.emailAddressFirstText {
+    color:#fff;
+    font-family: 'inter', sans-serif;
+    font-size:1rem;
+    margin:1rem 0rem 0rem 0rem;
+    font-weight:900;
+}
+
+.churchEmail {
+    color:#fff;
+    font-family: 'inter', sans-serif;
+    font-size:0.8rem;
+    margin:0.5rem 0rem 0rem 0rem;
+}
+
+.feedback {
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.feedbackContainer {
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto;
+    padding:1rem 1rem 1rem 1rem;
+    margin:0rem 0rem 2rem 0rem;
+}
+
+.feedbackImg {
+    width:100%;
+    height:10rem;
+    background:url(./images/Placeholder3.png) center/cover no-repeat;
+    border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.feedbackForm {
+    width:100%;
+    height:20rem;
     padding:1rem 0rem 1rem 0rem;
 }
 
-.aboutContentFirstText {
-    font-family:'inter', sans-serif;
-    font-weight:700;
-    font-size:1rem;
-    color:#ac0909;
-}
-
-.aboutContentSecondText {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:1.2rem;
-    margin:0.5rem 0rem 0.5rem 0rem;
-}
-
-.aboutContentMainText {
-    font-size:0.9rem;
-}
-
-.message {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:flex-start;
+.contactName {
     width:100%;
-    height:auto;
+    height:2.5rem;
+    border:1px solid #b3aeae;
+    border-radius:0.3rem;
+    padding:0rem 0rem 0rem 1rem;
 }
 
-.message1 {
+.contactEmail {
     width:100%;
-    height:5rem;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    background:#011635;
-    border-radius:0.5rem;
-    padding:0.5rem 0rem 0.5rem 0.5rem;
-    margin:0rem 0rem 0.5rem 0rem;
-}
-
-.message2 {
-    width:100%;
-    height:5rem;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    background:#011635;
-    border-radius:0.5rem;
-    padding:0.5rem 0rem 0.5rem 0.5rem;
-    margin:0.5rem 0rem 0rem 0rem;
-}
-
-.playIcon {
-    width:3rem;
-    height:3rem;
-    border-radius:50%;
-    background:#ac0909;
-    margin:0rem 0.5rem 0rem 0.5rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.fa-play {
-    color:#fff;
-    font-size:1.5rem;
-}
-
-.messageContent {
-    width:70%;
-    height:90%;
-}
-
-.messageHeader {
-    font-size:0.9rem;
-    color:#fff;
-}
-
-.preacherName {
-    color:#fff;
-    font-size:0.9rem;
-    margin:0.6rem 0rem 0rem 0rem;
-}
-
-.sermonDate {
-    color:#ffffffa6;
-    font-size:0.8rem;
-}
-
-.diaconate {
-    width:100%;
-    min-height:10vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.diaconateContainer {
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:flex-start;
-    padding:1rem 0.5rem 1rem 0.5rem;
-}
-
-.diaconateFirstText {
-    font-family:'inter', sans-serif;
-    font-size:1.1rem;
-    text-align:center;
-    color:#ac0909;
-    font-weight:600;
-}
-
-.diaconateHeader {
-    font-family:'inter', sans-serif;
-    font-size:1.5rem;
-    text-align:center;
-    font-style: italic;
-    margin:0.5rem 0rem 0rem 0rem;
-}
-
-.deaconsList {
-    width:90%;
-    height:auto;
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:auto auto auto auto;
-    grid-gap:2rem;
-    padding:2rem 0rem 0rem 0rem;
-}
-
-.deacon {
-    width:100%;
-    height:20rem;
-    border-radius:1rem;
-    box-shadow: 1px 1px 20px #000000ad;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-between;
-    padding:0rem 0rem 1rem 0rem;
-}
-
-.deaconImg {
-    width:100%;
-    height:80%;
-    border-radius:1rem 1rem 0rem 0rem;
-    background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-}
-
-.deaconName {
-    font-family:'inter', sans-serif;
-    font-weight:600;
-}
-
-.organisation {
-    width:100%;
-    min-height:10vh;
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:1fr 1fr;
-    align-items:start;
-    justify-items:center;
-    padding:1rem 0.5rem 1rem 0.5rem;
-    background:url(./images/Rectangle15.svg) center/cover;
-}
-
-.organisationFirstText {
-    font-size:0.8rem;
-    font-family:'inter', sans-serif;
-    color:#8b0000;
+    height:2.5rem;
+    border:1px solid #b3aeae;
+    border-radius:0.3rem;
+    padding:0rem 0rem 0rem 1rem;
     margin:1rem 0rem 0rem 0rem;
 }
 
-.organisationHeader {
-    font-size:1.3rem;
-    font-family:'inter', sans-serif;
-    margin:0rem 0rem 0.5rem 0rem;
+.contactPhoneNumber {
+    width:100%;
+    height:2.5rem;
+    border:1px solid #b3aeae;
+    border-radius:0.3rem;
+    padding:0rem 0rem 0rem 1rem;
+    margin:1rem 0rem 0rem 0rem;
 }
 
-.organisationContainer {
+.contactFeedback {
     width:100%;
-    min-height:10rem;
+    height:5rem;
+    border:1px solid #b3aeae;
+    border-radius:0.5rem;
+    padding:1rem 0rem 0rem 1rem;
+    margin:1rem 0rem 0rem 0rem;
+}
+
+.feedbackSubmitButton {
+    width:5rem;
+    height:2rem;
+    background:#ac0909;
+    border-radius:0.4rem;
+    color:#fff;
+    margin:0.5rem 0rem 0rem 0rem;
+}
+
+.locateUs {
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:#ded9d9;
+}
+
+.locateUsContainer {
+    width:100%;
+    height:auto;
     display:grid;
     grid-template-columns:1fr;
-    grid-template-rows:1fr 1fr 1fr;
+    grid-template-rows:auto auto;
     align-items:center;
     justify-items:center;
-    margin:0.5rem 0rem 1rem 0rem;
+    padding:1rem 1rem 1rem 1rem;
 }
 
-.union {
+.locateUsFirstText {
+    font-family:'inter', sans-serif;
+    font-size:1.1rem;
+    font-style:italic;
+    font-weight:600;
+}
+
+.map {
     width:100%;
-    height:25rem;
-    margin:1rem 0rem 1rem 0rem;
-    background:#fff;
-    border-radius:1rem;
-    box-shadow: 1px 1px 30px #000000ab;
-}
-
-.unionImg {
-    width:100%;
-    height:50%;
-    border-radius:1rem 1rem 0rem 0rem;
-    background:url(./images/Rectangle31.png) center/cover no-repeat;
-}
-
-.unionHeader {
-    font-size:0.9rem;
-    text-align:center;
-    margin:0.5rem 0rem 0rem 0rem;
-}
-
-.unionText {
-    font-size:0.8rem;
-    text-align:left;
-    padding:0rem 1rem 0rem 1rem;
-    margin:0.5rem 0rem 0.7rem 0rem;
-}
-
-.unionDetails {
-    display:block;
-    font-size:0.8rem;
-    color:#8b0000;
-    padding:0rem 1rem 0rem 1rem;
-    margin:0.5rem 0rem 0rem 0rem;
-    position:relative;
-}
-
-.unionDetails::after {
-    content:"";
-    width:4rem;
-    height:1px;
-    position:absolute;
-    top:0.82rem;
-    left:1rem;
-    background:#8b0000;
+    height:20rem;
+    border:1px solid #b3aeae;
+    border-radius:0.3rem;
+    margin:3rem 0rem 2rem 0rem;
+    background:url(./images/placeholder1.png) center/cover no-repeat;
 }
 
 .event {
@@ -801,7 +747,7 @@
     justify-content:space-between;
     width:90%;
     margin:1rem 0rem 0rem 0rem;
-}
+    }
 
 .newsletterEmail {
     padding:0rem 0rem 0rem 1rem;
@@ -811,7 +757,7 @@
     border:1px solid #b3aeae;
     border-radius:0.5rem 0rem 0rem 0.5rem;
     background:#fff;
-}
+    }
 
 .newsletterButton {
     background:#8b0000;
@@ -855,7 +801,7 @@
 }
 
 @media screen and (max-width:279px) {
-    .header {
+        .header {
         width:100%;
         height:3rem;
         position:fixed;
@@ -975,9 +921,9 @@
         display:none;
     }
 
-    .hero{
+    .contactBanner {
         width:100%;
-        height:70vh;
+        height:80vh;
         display:flex;
         flex-direction:column;
         align-items:center;
@@ -985,288 +931,230 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
-        font-size:2rem;
+        font-size:1.5rem;
         font-family: 'Inter', sans-serif;
-        margin:10rem 0rem 0rem 0rem;
+        margin:8rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        flex-direction:column;
-        justify-content: flex-start;
-        align-items:center;
-    }
-
-    .aboutContentContainer {
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
-        padding:1rem 0.5rem 1rem 0.5rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:15rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
+    .contactCard {
         width:100%;
         height:auto;
         display:flex;
         flex-direction:column;
-        justify-content:center;
         align-items:center;
-        margin:1rem 0rem 1rem 0rem;
+    
+    }
+
+    .contactCardContainer {
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto;
+        justify-items:center;
+        align-items:center;
+        grid-gap:1rem;
+        width:100%;
+        height:auto;
+        padding:1rem 1rem 1rem 1rem;
+    }
+
+    .location,
+    .phoneNumbers,
+    .emailAddress {
+        width:100%;
+        height:8rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
+        border-radius:1rem;
+        padding:1rem;
+    }
+
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:0.3rem 0rem 0rem 0rem;
+        font-size:1.1rem;
+        color:#ac0909;
+    }
+
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9em;
+        margin:0.5rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:0.7rem;
+        text-align:center;
+        font-family:'inter', sans-serif;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .locationFirstSpan {
+        display:block;
+    }
+
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:1rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.6rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.6rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:1rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.7rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
+        width:100%;
+        height: auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .feedbackContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        padding:1rem 1rem 1rem 1rem;
+        margin:0rem 0rem 2rem 0rem;
+    }
+
+    .feedbackImg {
+        width:100%;
+        height:7em;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackForm {
+        width:100%;
+        height:20rem;
         padding:1rem 0rem 1rem 0rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.2rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:0.9rem;
-    }
-
-    .message {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
+    .contactName {
         width:100%;
-        height:auto;
-    }
-
-    .message1 {
-        width:100%;
-        height:4rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:4rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:2.5rem;
         height:2.5rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 0.5rem 0rem 0.5rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
     }
 
-    .fa-play {
-        color:#fff;
-        font-size:1.1rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:0.8rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:0.7rem;
-        margin:0.4rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.7rem;
-    }
-
-    .diaconate {
+    .contactEmail {
         width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0.5rem 1rem 0.5rem;
-    }
-
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:0.8rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
-        width:90%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:auto auto auto;
-        grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:13rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0.5rem 1rem 0.5rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:0.8rem;
-        font-family:'inter', sans-serif;
-        color:#8b0000;
+        height:2.5rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
     }
 
-    .organisationHeader {
-        font-size:1rem;
-        font-family:'inter', sans-serif;
-        margin:0.3rem 0rem 0.5rem 0rem;
+    .contactPhoneNumber {
+        width:100%;
+        height:2.5rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .organisationContainer {
+    .contactFeedback {
         width:100%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        align-items:center;
-        justify-items:center;
-        margin:0.5rem 0rem 1rem 0rem;
+        height:5rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .union {
+    .feedbackSubmitButton {
+        width:5rem;
+        height:2rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
         width:100%;
-        height:16rem;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content:space-between;
-        padding:0rem 0rem 0.5rem 0rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
+        align-items:center;
+        background:#ded9d9;
     }
 
-    .unionImg {
+    .locateUsContainer {
         width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .unionHeader {
-        font-size:0.7rem;
-        text-align:center;
-        margin:0.2rem 0rem 0rem 0rem;
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.1rem;
+        font-style:italic;
+        font-weight:600;
     }
 
-    .unionText {
-        font-size:0.6rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.2rem 0rem 0.4rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:0.7rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.2rem 0rem 0rem 0rem;
-        position:relative;
-    }
-
-    .unionDetails::after {
-        content:"";
-        width:3.5rem;
-        height:1px;
-        position:absolute;
-        top:0.6rem;
-        left:1rem;
-        background:#8b0000;
+    .map {
+        width:100%;
+        height:10rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -1657,7 +1545,7 @@
         border-radius:0.5rem 0rem 0rem 0.5rem;
         background:#fff;
     }
-
+    
     .newsletterButton {
         background:#8b0000;
         color:#fff;
@@ -1674,7 +1562,7 @@
         background:#020d1e;
         display:flex;
         justify-content:center;
-    }
+        }
 
     .copyrightContainer {
         width:100%;
@@ -1822,7 +1710,7 @@
         display:none;
     }
 
-    .hero{
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -1832,295 +1720,228 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto auto;
         justify-items:center;
-        width:90%;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:17rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
+        align-items:center;
+        grid-gap:1rem;
         width:100%;
         height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.1rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.3rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1rem;
-    }
-
-    .message {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
+        width:100%;
+        height:10rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        width:100%;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
+        border-radius:1rem;
+        padding:1rem;
     }
 
-    .message1 {
-        width:100%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:4rem;
-        height:4rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.9rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:90%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
-    }
-
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:0.7rem 0rem 0rem 0rem;
+        font-size:1.5rem;
         color:#ac0909;
-        font-weight:600;
     }
 
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.5rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:0.8rem;
         text-align:center;
-        font-style: italic;
+        font-family:'inter', sans-serif;
         margin:0.5rem 0rem 0rem 0rem;
     }
 
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:auto auto auto auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:23rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0rem 1rem 0rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:90%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        align-items:center;
-        justify-items:center;
-        padding:0rem 0rem 0rem 0rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:31rem;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        margin:1rem 0rem 1rem 0rem;
-        padding:0rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
-        font-size:1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:0.95rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
+    .locationFirstSpan {
         display:block;
-        font-size:0.9rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.4rem;
-        height:1px;
-        position:absolute;
-        top:0.8rem;
-        left:1rem;
-        margin:0rem 0rem 1rem 0rem;
-        background:#8b0000;
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:1rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.7rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.7rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:1rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.8rem;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
+        width:100%;
+        height: auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .feedbackContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        padding:1rem 1rem 1rem 1rem;
+    }
+
+    .feedbackImg {
+        width:100%;
+        height:10rem;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackForm {
+        width:100%;
+        height:20rem;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:100%;
+        height:2.5rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:100%;
+        height:2.5rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactPhoneNumber {
+        width:100%;
+        height:2.5rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactFeedback {
+        width:100%;
+        height:5rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:5rem;
+        height:2rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:1rem 1rem 1rem 1rem;
+    }
+
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.1rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
+        width:100%;
+        height:20rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -2680,7 +2501,7 @@
         display:none;
     }
 
-    .hero{
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -2690,290 +2511,233 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto auto;
         justify-items:center;
-        width:90%;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:17rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
+        align-items:center;
+        grid-gap:1rem;
         width:100%;
         height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.1rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.3rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1rem;
-    }
-
-    .message {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
+        width:100%;
+        height:12rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        width:340px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
+        border-radius:1rem;
+        padding:1rem;
     }
 
-    .message1 {
-        width:100%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:0.7rem 0rem 0rem 0rem;
+        font-size:1.7rem;
+        color:#ac0909;
     }
 
-    .message2 {
-        width:100%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:4rem;
-        height:4rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
+    .locationFirstText {
         color:#fff;
-        font-size:2rem;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        font-weight:900;
     }
 
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1rem;
+    .locationAddress {
         color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
         font-size:0.9rem;
+        text-align:center;
+        font-family:'inter', sans-serif;
+        margin:0.7rem 0rem 0rem 0rem;
     }
 
-    .diaconate {
+    .locationFirstSpan {
+        display:block;
+    }
+
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.8rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.8rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
         width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:90%;
+        height: auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
+    .feedbackContainer {
         width:100%;
         height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:auto auto auto auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
+        grid-template-rows:auto auto;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .deacon {
+    .feedbackImg {
         width:100%;
-        height:23rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+        height:13rem;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackForm {
+        width:100%;
+        height:24rem;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:100%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:100%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactPhoneNumber {
+        width:100%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactFeedback {
+        width:100%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:6rem;
+        height:3rem;
+        font-size:1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.5rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
     }
 
-    .deaconImg {
+    .locateUsContainer {
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
+        height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0.5rem 1rem 0.5rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:100%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
+        grid-template-rows:auto auto;
         align-items:center;
         justify-items:center;
-        padding:0rem 0.5rem 0rem 0.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .union {
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.2rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
         width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
-        font-size:1.1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
-    }
-
-    .unionDetails::after {
-        content:"";
-        width:4.7rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+        height:22rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -3533,7 +3297,7 @@
         display:none;
     }
 
-    .hero{
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -3543,290 +3307,234 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto auto;
         justify-items:center;
-        width:85%;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:17rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
-        height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
         align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.1rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.3rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1rem;
-    }
-
-    .message {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        width:340px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
-    }
-
-    .message1 {
-        width:100%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0rem 0rem 0.5rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.5rem 0rem 0.5rem 0.5rem;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .playIcon {
-        width:4rem;
-        height:4rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.9rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:85%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
-    }
-
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:auto auto auto auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 0rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:23rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0.5rem 1rem 0.5rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
+        grid-gap:1rem;
         width:90%;
-        min-height:10rem;
+        height:auto;
+        padding:1rem 1rem 1rem 1rem;
+    }
+
+    .location,
+    .phoneNumbers,
+    .emailAddress {
+        width:100%;
+        height:12rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
+        border-radius:1rem;
+        padding:1rem;
+    }
+
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:0.7rem 0rem 0rem 0rem;
+        font-size:1.7rem;
+        color:#ac0909;
+    }
+
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:1rem;
+        text-align:center;
+        line-height:1.2rem;
+        font-family:'inter', sans-serif;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locationFirstSpan {
+        display:block;
+    }
+
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
+        width:100%;
+        height: auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .feedbackContainer {
+        width:100%;
+        height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        align-items:center;
-        justify-items:center;
-        padding:0rem 0.5rem 0rem 0.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        grid-template-rows:auto auto;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .union {
+    .feedbackImg {
         width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
+        height:15rem;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
     }
 
-    .unionImg {
+    .feedbackForm {
         width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
+        height:24rem;
+        padding:1rem 0rem 1rem 0rem;
     }
 
-    .unionHeader {
-        font-size:1.1rem;
-        text-align:center;
+    .contactName {
+        width:100%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:100%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
     }
 
-    .unionText {
+    .contactPhoneNumber {
+        width:100%;
+        height:3.5rem;
         font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .unionDetails {
-        display:block;
+    .contactFeedback {
+        width:100%;
+        height:7rem;
         font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:6rem;
+        height:3rem;
+        font-size:1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
         margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.7rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:2rem 1rem 1rem 1rem;
+    }
+
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.2rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
+        width:100%;
+        height:22rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -4229,10 +3937,10 @@
     }
 
     .copyright-Container {
-            width:100%;
-            background:#020d1e;
-            display:flex;
-            justify-content:center;
+        width:100%;
+        background:#020d1e;
+        display:flex;
+        justify-content:center;
         }
 
     .copyrightContainer {
@@ -4381,7 +4089,7 @@
         display:none;
     }
 
-    .hero{
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -4391,291 +4099,245 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
         font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
         grid-template-columns:1fr;
         grid-template-rows:auto auto auto;
         justify-items:center;
-        width:546px;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:19rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
+        align-items:center;
+        grid-gap:1rem;
+        width:476px;
         height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 0rem 1rem 0rem;
+        padding:1rem 1rem 1rem 1rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.1rem;
-    }
-
-    .message {
-        display:flex;
-        flex-direction:row;
-        align-items:flex-start;
-        justify-content:center;
-        width:510px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
-    }
-
-    .message1 {
-        width:50%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:50%;
-        height:6rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:3.5rem;
-        height:3.5rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 0.5rem 0rem 0rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:0.9rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:0.9rem;
-        margin:0.6rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:0.8rem;
-    }
-
-    .diaconate {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
         width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:560px;
+        height:12rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 0rem 1rem 0rem;
-    }
-
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.1rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.5rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        justify-content:center;
-        grid-gap:1rem;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:21rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
         border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+        padding:1rem;
+    }
+
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:0.7rem 0rem 0rem 0rem;
+        font-size:1.7rem;
+        color:#ac0909;
+    }
+
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:1rem;
+        text-align:center;
+        line-height:1.2rem;
+        font-family:'inter', sans-serif;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locationFirstSpan {
+        display:block;
+    }
+
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
+        width:100%;
+        height: auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
+        justify-content: center;
     }
 
-    .deaconImg {
+    .feedbackContainer {
+        width:530px;
+        height:27rem;
+        display:grid;
+        grid-template-columns:1.2fr 1fr;
+        grid-template-rows:auto;
+        justify-items:center;
+        align-items:center;
+        padding:0rem 0rem 0rem 2rem;
+        margin:2rem 0rem 3rem 0rem;
+        box-shadow: 2px 2px 20px #000;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackImg {
+        grid-area: 1/2/2/3;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:100%;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.1rem;
-    }
-
-    .organisation {
+    .feedbackForm {
         width:100%;
-        min-height:10vh;
+        height:24rem;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content: center;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:90%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:90%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactPhoneNumber {
+        width:90%;
+        height:3.5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactFeedback {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:6rem;
+        height:3rem;
+        font-size:1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:576px;
+        height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0rem 1rem 0rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.5rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:560px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr;
         grid-template-rows:auto auto;
-        grid-gap:1rem;
         align-items:center;
         justify-items:center;
-        padding:0rem 0rem 0rem 0rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        padding:4rem 1rem 1rem 1rem;
     }
 
-    .union {
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.2rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
         width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
-        font-size:1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:0.9rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:0.9rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
-    }
-
-    .unionDetails::after {
-        content:"";
-        width:4.5rem;
-        height:1px;
-        position:absolute;
-        top:0.85rem;
-        left:1rem;
-        background:#8b0000;
+        height:25rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -5205,7 +4867,11 @@
         justify-content:center;
     }
 
-    .hero{
+    .headerSocialContainer {
+        display:none;
+    }
+
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -5215,294 +4881,245 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
-        font-size:2.5rem;
+        font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        grid-gap:2rem 1rem;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto;
         justify-items:center;
         align-items:center;
+        grid-gap:1rem;
         width:768px;
-        padding:3rem 1rem 1rem 1rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
         height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        padding:4rem 1rem 1rem 1rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.1rem;
-    }
-
-    .message {
-        grid-area:2/1/3/3;
-        display:flex;
-        flex-direction:row;
-        align-items:flex-start;
-        justify-content:center;
-        width:728px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
-    }
-
-    .message1 {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
         width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 1rem 0rem 1rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.2rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:768px;
+        height:12rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
-    }
-
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:25rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
         border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
+        padding:1rem;
+    }
+
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:0.7rem 0rem 0rem 0rem;
+        font-size:1.7rem;
+        color:#ac0909;
+    }
+
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:0.9rem;
+        text-align:center;
+        line-height:1.2rem;
+        font-family:'inter', sans-serif;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locationFirstSpan {
+        display:block;
+    }
+
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.8rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.8rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
+        width:100%;
+        height: auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
+        justify-content: center;
     }
 
-    .deaconImg {
+    .feedbackContainer {
+        width:720px;
+        height:32rem;
+        display:grid;
+        grid-template-columns:1.2fr 1fr;
+        grid-template-rows:auto;
+        justify-items:center;
+        align-items:center;
+        padding:0rem 0rem 0rem 2rem;
+        margin:2rem 0rem 3rem 0rem;
+        box-shadow: 2px 2px 20px #000;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackImg {
+        grid-area: 1/2/2/3;
         width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+        height:100%;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
     }
 
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
-    }
-
-    .organisation {
+    .feedbackForm {
         width:100%;
-        min-height:10vh;
+        height:24rem;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content: center;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:90%;
+        height:5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:90%;
+        height:5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactPhoneNumber {
+        width:90%;
+        height:5rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactFeedback {
+        width:90%;
+        height:9rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:6rem;
+        height:4rem;
+        font-size:1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:768px;
+        height:auto;
         display:grid;
         grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr;
-        align-items:start;
-        justify-items:center;
-        padding:1rem 0rem 1rem 0rem;
-        background:url(./images/Rectangle15.svg) center/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1.1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.7rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:768px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr;
         grid-template-rows:auto auto;
-        grid-gap:2rem 1rem;
         align-items:center;
         justify-items:center;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 1rem 0rem;
+        padding:4rem 2rem 1rem 2rem;
     }
 
-    .union {
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.3rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
         width:100%;
-        height:30rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
-        font-size:1.1rem;
-        text-align:center;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
-    }
-
-    .unionDetails::after {
-        content:"";
-        width:5rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+        height:28rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -6034,7 +5651,11 @@
         justify-content:center;
     }
 
-    .hero{
+    .headerSocialContainer {
+        display:none;
+    }
+
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -6044,293 +5665,245 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
-        font-size:2.5rem;
+        font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto;
         justify-items:center;
         align-items:center;
-        width:900px;
-        padding:3rem 1rem 1rem 1rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
+        grid-gap:1rem;
+        width:850px;
         height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        padding:4rem 1rem 1rem 1rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.1rem;
-    }
-
-    .message {
-        grid-area:2/1/3/3;
-        display:flex;
-        flex-direction:row;
-        align-items:flex-start;
-        justify-content:center;
-        width:800px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
-    }
-
-    .message1 {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
         width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 1rem 0rem 1rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.2rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:900px;
+        height:12rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
+        border-radius:1rem;
+        padding:1rem;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:0.7rem 0rem 0rem 0rem;
         font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
+        color:#ac0909;
     }
 
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:22rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:1.5rem 0rem 1.5rem 0rem;
-        background:url(./images/Rectangle15.svg) top left top/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-size:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:100%;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:3rem 2rem;
-        align-items:center;
-        justify-items:center;
-        margin:1rem 0rem 1rem 0rem;
-        padding:1rem 1rem 1rem 1rem;
-    }
-
-    .union {
-        width:100%;
-        height:29rem;
-        margin:0rem 0rem 0rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
         font-size:1.1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:0.9rem;
         text-align:center;
+        line-height:1.2rem;
+        font-family:'inter', sans-serif;
         margin:0.7rem 0rem 0rem 0rem;
     }
 
-    .unionText {
-        font-size:0.9rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .unionDetails {
+    .locationFirstSpan {
         display:block;
-        font-size:0.9rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.8rem 0rem 0rem 0rem;
-        position:relative;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:4.4rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.8rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.8rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:0.9rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
+        width:100%;
+        height: auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .feedbackContainer {
+        width:800px;
+        height:33rem;
+        display:grid;
+        grid-template-columns:1.2fr 1fr;
+        grid-template-rows:auto;
+        justify-items:center;
+        align-items:center;
+        padding:0rem 0rem 0rem 2rem;
+        margin:2rem 0rem 3rem 0rem;
+        box-shadow: 2px 2px 20px #000;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackImg {
+        grid-area: 1/2/2/3;
+        width:100%;
+        height:100%;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackForm {
+        width:100%;
+        height:24rem;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content: center;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:90%;
+        height:6rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:90%;
+        height:6rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactPhoneNumber {
+        width:90%;
+        height:6rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactFeedback {
+        width:90%;
+        height:10rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:7rem;
+        height:5rem;
+        font-size:1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:850px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:4rem 2rem 1rem 2rem;
+    }
+
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.3rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
+        width:100%;
+        height:30rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -6859,7 +6432,11 @@
         justify-content:center;
     }
 
-    .hero{
+    .headerSocialContainer {
+        display:none;
+    }
+
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -6869,290 +6446,245 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
-        font-size:2.5rem;
+        font-size:2rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto;
         justify-items:center;
         align-items:center;
-        width:1024px;
-        padding:3rem 1rem 1rem 1rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
+        grid-gap:1rem;
+        width:1000px;
         height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
+        padding:4rem 1rem 1rem 1rem;
     }
 
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.2rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.5rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.1rem;
-    }
-
-    .message {
-        grid-area:2/1/3/3;
-        display:flex;
-        flex-direction:row;
-        align-items:flex-start;
-        justify-content:center;
-        width:800px;
-        height:auto;
-        padding:0rem 0rem 0rem 0rem;
-    }
-
-    .message1 {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
         width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:7rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 1rem 0rem 1rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.2rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width:950px;
+        height:15rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
-    }
-
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:22rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
         border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
+        padding:1rem;
     }
 
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:1.5rem 0rem 0rem 0rem;
+        font-size:2rem;
+        color:#ac0909;
     }
 
-    .deaconName {
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:1.1rem;
+        text-align:center;
+        line-height:1.3rem;
         font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
+        margin:0.7rem 0rem 0rem 0rem;
     }
 
-    .organisation {
+    .locationFirstSpan {
+        display:block;
+    }
+
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
         width:100%;
-        min-height:10vh;
+        height: auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:center;
-        padding:1rem 1rem 1rem 1rem;
-        background:url(./images/Rectangle15.svg) top left/cover;
+        justify-content: center;
     }
 
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
+    .feedbackContainer {
+        width:950px;
+        height:33rem;
+        display:grid;
+        grid-template-columns:1.2fr 1fr;
+        grid-template-rows:auto;
+        justify-items:center;
+        align-items:center;
+        padding:0rem 0rem 0rem 2rem;
+        margin:4rem 0rem 3rem 0rem;
+        box-shadow: 2px 2px 20px #000;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackImg {
+        grid-area: 1/2/2/3;
+        width:100%;
+        height:100%;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackForm {
+        width:100%;
+        height:24rem;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content: center;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
     }
 
-    .organisationHeader {
-        font-family:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
+    .contactPhoneNumber {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .organisationContainer {
-        width:1024px;
-        min-height:10rem;
+    .contactFeedback {
+        width:90%;
+        height:11rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:8rem;
+        height:6rem;
+        font-size:1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:950px;
+        height:auto;
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:2rem;
-        margin:2rem 0rem 3rem 0rem;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:4rem 2rem 1rem 2rem;
     }
 
-    .union {
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.5rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
         width:100%;
-        height:32rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
-        font-size:1.1rem;
-        text-align:center;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.3rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
-    }
-
-    .unionDetails::after {
-        content:"";
-        width:4.9rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+        height:30rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -7684,7 +7216,11 @@
         justify-content:center;
     }
 
-    .hero{
+    .headerSocialContainer {
+        display:none;
+    }
+
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -7694,291 +7230,245 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
-        font-size:2.5rem;
+        font-size:3rem;
         font-family: 'Inter', sans-serif;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto;
         justify-items:center;
         align-items:center;
-        width:1180px;
-        padding:3rem 1rem 1rem 1rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
-        height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
-    }
-
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.5rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.8rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.4rem;
-    }
-
-    .message {
-        grid-area:2/1/3/3;
-        display:flex;
-        flex-direction:row;
-        align-items:flex-start;
-        justify-content:center;
-        gap:2rem;
+        grid-gap:1rem;
         width:1000px;
         height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        padding:4rem 1rem 1rem 1rem;
     }
 
-    .message1 {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
         width:100%;
-        height:8rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:8rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 1rem 0rem 2rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.5rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.1rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width: 1150px;
+        height:15rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
-    }
-
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
-        color:#ac0909;
-        font-weight:600;
-    }
-
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:25rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
         border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
+        padding:1rem;
     }
 
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:1.5rem 0rem 0rem 0rem;
+        font-size:2.5rem;
+        color:#ac0909;
     }
 
-    .deaconName {
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:1.1rem;
+        text-align:center;
+        line-height:1.3rem;
         font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
+        margin:0.7rem 0rem 0rem 0rem;
     }
 
-    .organisation {
+    .locationFirstSpan {
+        display:block;
+    }
+
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
         width:100%;
-        min-height:10vh;
+        height: auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content:center;
-        padding:1rem 1rem 1rem 1rem;
-        background:url(./images/Rectangle15.svg) top left/cover;
+        justify-content: center;
     }
 
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
+    .feedbackContainer {
+        width:950px;
+        height:33rem;
+        display:grid;
+        grid-template-columns:1.2fr 1fr;
+        grid-template-rows:auto;
+        justify-items:center;
+        align-items:center;
+        padding:0rem 0rem 0rem 2rem;
+        margin:4rem 0rem 3rem 0rem;
+        box-shadow: 2px 2px 20px #000;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackImg {
+        grid-area: 1/2/2/3;
+        width:100%;
+        height:100%;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackForm {
+        width:100%;
+        height:24rem;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content: center;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
         margin:1rem 0rem 0rem 0rem;
     }
 
-    .organisationHeader {
-        font-family:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
+    .contactPhoneNumber {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
     }
 
-    .organisationContainer {
-        width:1150px;
-        min-height:10rem;
+    .contactFeedback {
+        width:90%;
+        height:11rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:9rem;
+        height:7rem;
+        font-size:1.1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:1050px;
+        height:auto;
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:2rem;
-        margin:2rem 0rem 3rem 0rem;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:4rem 2rem 1rem 2rem;
     }
 
-    .union {
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.5rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
         width:100%;
-        height:32rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
-        font-size:1.1rem;
-        text-align:center;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .unionText {
-        font-size:1.1rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
-        display:block;
-        font-size:1.1rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
-    }
-
-    .unionDetails::after {
-        content:"";
-        width:5.2rem;
-        height:1px;
-        position:absolute;
-        top:0.9rem;
-        left:1rem;
-        background:#8b0000;
+        height:30rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -8510,7 +8000,11 @@
         justify-content:center;
     }
 
-    .hero{
+    .headerSocialContainer {
+        display:none;
+    }
+
+    .contactBanner {
         width:100%;
         height:80vh;
         display:flex;
@@ -8520,292 +8014,245 @@
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
 
-    .heroMainText {
+    .contactBannerMainText {
         color:#fff;
-        font-size:2.5rem;
+        font-size:3rem;
         font-family: 'Inter', sans-serif;
-        text-align:center;
         margin:10rem 0rem 0rem 0rem;
     }
 
-    .aboutContent {
+    .contactCard {
         width:100%;
-        min-height:10vh;
+        height:auto;
         display:flex;
         flex-direction:column;
-        justify-content: flex-start;
         align-items:center;
+    
     }
 
-    .aboutContentContainer {
+    .contactCardContainer {
         display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:auto auto;
-        grid-gap:3rem 2rem;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:auto;
         justify-items:center;
         align-items:center;
-        width:1300px;
-        padding:3rem 1rem 1rem 1rem;
-    }
-
-    .aboutContentImg {
-        width:100%;
-        height:30rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .aboutContentText {
-        width:100%;
-        height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:0rem 0rem 0rem 0rem;
-        padding:0rem 0rem 0rem 0rem;
-    }
-
-    .aboutContentFirstText {
-        font-family:'inter', sans-serif;
-        font-weight:700;
-        font-size:1.5rem;
-        color:#ac0909;
-    }
-
-    .aboutContentSecondText {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:1.8rem;
-        margin:0.5rem 0rem 1rem 0rem;
-    }
-
-    .aboutContentMainText {
-        font-size:1.4rem;
-    }
-
-    .message {
-        grid-area:2/1/3/3;
-        display:flex;
-        flex-direction:row;
-        align-items:flex-start;
-        justify-content:center;
-        gap:2rem;
+        grid-gap:1rem;
         width:1000px;
         height:auto;
-        padding:0rem 0rem 0rem 0rem;
+        padding:4rem 1rem 1rem 1rem;
     }
 
-    .message1 {
+    .location,
+    .phoneNumbers,
+    .emailAddress {
         width:100%;
-        height:8rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0.5rem 0rem 0rem;
-    }
-
-    .message2 {
-        width:100%;
-        height:8rem;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        background:#011635;
-        border-radius:0.5rem;
-        padding:0.8rem 0rem 0.8rem 0.5rem;
-        margin:0rem 0rem 0rem 0.5rem;
-    }
-
-    .playIcon {
-        width:5rem;
-        height:5rem;
-        border-radius:50%;
-        background:#ac0909;
-        margin:0rem 1rem 0rem 2rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .fa-play {
-        color:#fff;
-        font-size:2rem;
-    }
-
-    .messageContent {
-        width:70%;
-        height:90%;
-    }
-
-    .messageHeader {
-        font-size:1.5rem;
-        color:#fff;
-    }
-
-    .preacherName {
-        color:#fff;
-        font-size:1.2rem;
-        margin:1.3rem 0rem 0rem 0rem;
-    }
-
-    .sermonDate {
-        color:#ffffffa6;
-        font-size:1.1rem;
-    }
-
-    .diaconate {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .diaconateContainer {
-        width: 1150px;
+        height:15rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:flex-start;
-        padding:1rem 1rem 1rem 1rem;
+        background:linear-gradient(#0f1531f0, #0f1531f0), url(./images/back.JPG) center/cover no-repeat;
+        border-radius:1rem;
+        padding:1rem;
     }
 
-    .diaconateFirstText {
-        font-family:'inter', sans-serif;
-        font-size:1.2rem;
-        text-align:center;
+    .fa-phone,
+    .fa-envelope,
+    .fa-location-dot {
+        margin:1.5rem 0rem 0rem 0rem;
+        font-size:2.5rem;
         color:#ac0909;
-        font-weight:600;
     }
 
-    .diaconateHeader {
-        font-family:'inter', sans-serif;
-        font-size:1.7rem;
-        text-align:center;
-        font-style: italic;
-        margin:0.5rem 0rem 0rem 0rem;
-    }
-
-    .deaconsList {
-        width:100%;
-        height:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:auto;
-        justify-content:center;
-        grid-gap:2rem;
-        padding:2rem 0rem 1rem 0rem;
-    }
-
-    .deacon {
-        width:100%;
-        height:25rem;
-        border-radius:1rem;
-        box-shadow: 1px 1px 20px #000000ad;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:space-between;
-        padding:0rem 0rem 1rem 0rem;
-    }
-
-    .deaconImg {
-        width:100%;
-        height:80%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Placeholder2.jpeg) center/cover no-repeat;
-    }
-
-    .deaconName {
-        font-family:'inter', sans-serif;
-        font-weight:600;
-        font-size:1.3rem;
-    }
-
-    .organisation {
-        width:100%;
-        min-height:10vh;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:1rem 1rem 1rem 1rem;
-        background:url(./images/Rectangle15.svg) top left/cover;
-    }
-
-    .organisationFirstText {
-        font-size:1.3rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#8b0000;
-        margin:1rem 0rem 0rem 0rem;
-    }
-
-    .organisationHeader {
-        font-family:1.8rem;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
-
-    .organisationContainer {
-        width:1300px;
-        min-height:10rem;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr;
-        grid-gap:2rem;
-        margin:2rem 0rem 3rem 0rem;
-    }
-
-    .union {
-        width:100%;
-        height:32rem;
-        margin:1rem 0rem 1rem 0rem;
-        background:#fff;
-        border-radius:1rem;
-        box-shadow: 1px 1px 30px #000000ab;
-    }
-
-    .unionImg {
-        width:100%;
-        height:50%;
-        border-radius:1rem 1rem 0rem 0rem;
-        background:url(./images/Rectangle31.png) center/cover no-repeat;
-    }
-
-    .unionHeader {
+    .locationFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
         font-size:1.2rem;
+        margin:1rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .locationAddress {
+        color:#fff;
+        font-size:1.1rem;
         text-align:center;
+        line-height:1.3rem;
+        font-family:'inter', sans-serif;
         margin:0.7rem 0rem 0rem 0rem;
     }
 
-    .unionText {
-        font-size:1.2rem;
-        text-align:left;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0.7rem 0rem;
-    }
-
-    .unionDetails {
+    .locationFirstSpan {
         display:block;
-        font-size:1.2rem;
-        color:#8b0000;
-        padding:0rem 1rem 0rem 1rem;
-        margin:0.5rem 0rem 0rem 0rem;
-        position:relative;
     }
 
-    .unionDetails::after {
-        content:"";
-        width:5.5rem;
-        height:1px;
-        position:absolute;
-        top:1rem;
-        left:1rem;
-        background:#8b0000;
+    .locationSecondSpan {
+        display:block;
+    }
+
+    .locationThirdSpan {
+        display:block;
+    }
+
+    .phoneNumberFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .phoneNumber1 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.9rem 0rem 0rem 0rem;
+    }
+
+    .phoneNumber2 {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1rem;
+        margin:0.2rem 0rem 0rem 0rem;
+    }
+
+    .emailAddressFirstText {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.2rem;
+        margin:1.2rem 0rem 0rem 0rem;
+        font-weight:900;
+    }
+
+    .churchEmail {
+        color:#fff;
+        font-family: 'inter', sans-serif;
+        font-size:1.1rem;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .feedback {
+        width:100%;
+        height: auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .feedbackContainer {
+        width:950px;
+        height:33rem;
+        display:grid;
+        grid-template-columns:1.2fr 1fr;
+        grid-template-rows:auto;
+        justify-items:center;
+        align-items:center;
+        padding:0rem 0rem 0rem 2rem;
+        margin:4rem 0rem 3rem 0rem;
+        box-shadow: 2px 2px 20px #000;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackImg {
+        grid-area: 1/2/2/3;
+        width:100%;
+        height:100%;
+        background:url(./images/Placeholder3.png) center/cover no-repeat;
+        border-radius:0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+    .feedbackForm {
+        width:100%;
+        height:24rem;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content: center;
+        padding:1rem 0rem 1rem 0rem;
+    }
+
+    .contactName {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+    }
+
+    .contactEmail {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactPhoneNumber {
+        width:90%;
+        height:7rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        padding:0rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .contactFeedback {
+        width:90%;
+        height:11rem;
+        font-size:1rem;
+        border:1px solid #b3aeae;
+        border-radius:0.5rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
+
+    .feedbackSubmitButton {
+        width:9rem;
+        height:7rem;
+        font-size:1.1rem;
+        background:#ac0909;
+        border-radius:0.4rem;
+        color:#fff;
+        margin:0.7rem 0rem 0rem 0rem;
+    }
+
+    .locateUs {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .locateUsContainer {
+        width:1050px;
+        height:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+        align-items:center;
+        justify-items:center;
+        padding:4rem 2rem 1rem 2rem;
+    }
+
+    .locateUsFirstText {
+        font-family:'inter', sans-serif;
+        font-size:1.5rem;
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .map {
+        width:100%;
+        height:30rem;
+        border:1px solid #b3aeae;
+        border-radius:0.3rem;
+        margin:3rem 0rem 2rem 0rem;
+        background:url(./images/placeholder1.png) center/cover no-repeat;
     }
 
     .event {
@@ -9230,14 +8677,13 @@
 }
 
 @media screen and (min-height:800px) {
-    .hero{
+    .contactBanner {
         width:100%;
-        height:40rem;
+        height:640px;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:center;
         background:linear-gradient(#011635be, #011635be), url(./images/Placeholder4.jpeg) fixed;
     }
-
 }
