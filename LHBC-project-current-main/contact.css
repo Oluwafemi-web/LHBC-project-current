@@ -741,23 +741,23 @@
 }
 
 .subscribe {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    width:90%;
-    margin:1rem 0rem 0rem 0rem;
-    }
+display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:space-between;
+width:90%;
+margin:1rem 0rem 0rem 0rem;
+}
 
 .newsletterEmail {
-    padding:0rem 0rem 0rem 1rem;
-    font-size:0.9rem;
-    height:2.5rem;
-    width:100%;
-    border:1px solid #b3aeae;
-    border-radius:0.5rem 0rem 0rem 0.5rem;
-    background:#fff;
-    }
+padding:0rem 0rem 0rem 1rem;
+font-size:0.9rem;
+height:2.5rem;
+width:100%;
+border:1px solid #b3aeae;
+border-radius:0.5rem 0rem 0rem 0.5rem;
+background:#fff;
+}
 
 .newsletterButton {
     background:#8b0000;
@@ -4867,10 +4867,6 @@
         justify-content:center;
     }
 
-    .headerSocialContainer {
-        display:none;
-    }
-
     .contactBanner {
         width:100%;
         height:80vh;
@@ -7027,6 +7023,10 @@
         margin:0rem 0rem 0rem 0.5rem;
     }
 
+    .calendarIcon {
+        margin:0rem 0rem 0rem 0.5rem;
+    }
+
     .footerNewsletter {
         grid-area:auto;
         width:95%;
@@ -7062,15 +7062,15 @@
         width:90%;
         margin:1rem 0rem 0rem 0rem;
     }
-
+    
     .newsletterEmail {
         padding:0rem 0rem 0rem 1rem;
         font-size:0.9rem;
         height:2.5rem;
         width:100%;
         border:1px solid #b3aeae;
-        border-radius:0.5rem 0rem 0rem 0.5rem;
         background:#fff;
+        border-radius:0.5rem 0rem 0rem 0.5rem;
     }
 
     .newsletterButton {
@@ -7808,6 +7808,10 @@
         color:#fff;
         font-size:0.8rem;
         font-family:Arial, Helvetica, sans-serif;
+        margin:0rem 0rem 0rem 0.5rem;
+    }
+
+    .calendarIcon {
         margin:0rem 0rem 0rem 0.5rem;
     }
 
@@ -8586,6 +8590,10 @@
         color:#fff;
         font-size:1rem;
         font-family:Arial, Helvetica, sans-serif;
+        margin:0rem 0rem 0rem 0.5rem;
+    }
+
+    .calendarIcon {
         margin:0rem 0rem 0rem 0.5rem;
     }
 
