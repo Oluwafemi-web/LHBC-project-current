@@ -79,7 +79,15 @@
 }
 
 .hamburger:checked ~ .navMenu {
-    max-height:12rem;
+    visibility:visible;
+}
+
+.hamburger:checked ~ .navMenu .headerHome,
+.hamburger:checked ~ .navMenu .headerAbout,
+.hamburger:checked ~ .navMenu .headerGallery,
+.hamburger:checked ~ .navMenu .headerContact,
+.hamburger:checked ~ .navMenu .headerBlog {
+    transform:rotateY(0deg);
 }
 
 .hamburger:checked ~ .hamburgerMenu .hamburgerLine {
@@ -105,14 +113,15 @@
     clear:both;
     padding:0rem 1rem 0rem 1rem;
     background:#011635;
-    max-height:0rem;
+    visibility:hidden;
+    max-height:20rem;
     width:100%;
     overflow: hidden;
-    transition:max-height .2s ease-out;
+    transition:all .3s ease-out;
 }
 
 .headerUl {
-    margin:1rem 0rem 1rem 0rem;
+    margin:1rem 0rem 1.5rem 0rem;
 }
 
 .headerHome,
@@ -125,6 +134,9 @@
     color:#fff;
     font-family: 'Inter', sans-serif;
     font-weight:bold;
+    font-size:1.7rem;
+    transform: rotateY(90deg);
+    transition:all .3s ease-in-out;
 }
 
 .headerSocialContainer {
@@ -1121,6 +1133,10 @@
         height:4rem;
         position:fixed;
         z-index:999;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:#011635;
     }
 
     .headerContainer {
@@ -1180,7 +1196,15 @@
     }
 
     .hamburger:checked ~ .navMenu {
-        max-height:12rem;
+        visibility:visible;
+    }
+
+    .hamburger:checked ~ .navMenu .headerHome,
+    .hamburger:checked ~ .navMenu .headerAbout,
+    .hamburger:checked ~ .navMenu .headerGallery,
+    .hamburger:checked ~ .navMenu .headerContact,
+    .hamburger:checked ~ .navMenu .headerBlog {
+        transform:rotateY(0deg);
     }
 
     .hamburger:checked ~ .hamburgerMenu .hamburgerLine {
@@ -1206,14 +1230,15 @@
         clear:both;
         padding:0rem 1rem 0rem 1rem;
         background:#011635;
-        max-height:0rem;
+        visibility:hidden;
+        max-height:20rem;
         width:100%;
         overflow: hidden;
-        transition:max-height .2s ease-out;
+        transition:all .3s ease-out;
     }
 
     .headerUl {
-        margin:1rem 0rem 1rem 0rem;
+        margin:1rem 0rem 1.5rem 0rem;
     }
 
     .headerHome,
@@ -1224,6 +1249,19 @@
         display:block;
         text-align:center;
         color:#fff;
+        font-family: 'Inter', sans-serif;
+        font-weight:bold;
+        font-size:1.7rem;
+        transform: rotateY(90deg);
+        transition:all .3s ease-in-out;
+    }
+
+    .headerSocialContainer {
+        display:none;
+    }
+
+    .headerSocialContainer {
+        display: none;
     }
 
     .hero {
@@ -2161,103 +2199,116 @@
 
 @media screen and (min-width:476px) {
     .header {
-        width:100%;
-        height:4rem;
-        position:fixed;
-        z-index:999;
+        width: 100%;
+        height: 4rem;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #011635;
     }
 
     .headerContainer {
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
     }
 
     .headerLogo {
-        width:3.5rem;
-        height:3.5rem;
-        float:left;
-        background:url(./images/logo.png) center/cover no-repeat;
+        width: 3.5rem;
+        height: 3.5rem;
+        float: left;
+        background: url(./images/logo.png) center/cover no-repeat;
     }
 
     .hamburger {
-        display:none;
+        display: none;
     }
 
     .hamburgerMenu {
-        float:right;
-        width:2rem;
-        height:2rem;
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:center;
-        margin:1rem 1rem 0rem 1rem;
+        float: right;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 1rem 1rem 0rem 1rem;
     }
 
     .hamburgerLine {
-        display:block;
-        width:16px;
-        height:2.5px;
-        background:#fff;
-        position:relative;
-        transition:all .2s ease-in-out;
+        display: block;
+        width: 16px;
+        height: 2.5px;
+        background: #fff;
+        position: relative;
+        transition: all .2s ease-in-out;
     }
 
     .hamburgerLine:after {
-        content:"";
-        width:24px;
-        height:2.5px;
-        background:#fff;
-        position:absolute;
-        top:7px;
-        transition:all .2s ease-in-out;
+        content: "";
+        width: 24px;
+        height: 2.5px;
+        background: #fff;
+        position: absolute;
+        top: 7px;
+        transition: all .2s ease-in-out;
     }
 
     .hamburgerLine:before {
-        content:"";
-        width:20px;
-        height:2.5px;
-        background:#fff;
-        position:absolute;
-        top:-7px;
-        transition:all .2s ease-in-out;
+        content: "";
+        width: 20px;
+        height: 2.5px;
+        background: #fff;
+        position: absolute;
+        top: -7px;
+        transition: all .2s ease-in-out;
     }
 
-    .hamburger:checked ~ .navMenu {
-        max-height:12rem;
+    .hamburger:checked~.navMenu {
+        visibility: visible;
     }
 
-    .hamburger:checked ~ .hamburgerMenu .hamburgerLine {
-        top:0px;
+    .hamburger:checked~.navMenu .headerHome,
+    .hamburger:checked~.navMenu .headerAbout,
+    .hamburger:checked~.navMenu .headerGallery,
+    .hamburger:checked~.navMenu .headerContact,
+    .hamburger:checked~.navMenu .headerBlog {
+        transform: rotateY(0deg);
+    }
+
+    .hamburger:checked~.hamburgerMenu .hamburgerLine {
+        top: 0px;
         background: transparent;
     }
 
-    .hamburger:checked ~ .hamburgerMenu .hamburgerLine:before {
-        top:0px;
-        width:24px;
-        height:2.5px;
-        transform:rotate(135deg);
+    .hamburger:checked~.hamburgerMenu .hamburgerLine:before {
+        top: 0px;
+        width: 24px;
+        height: 2.5px;
+        transform: rotate(135deg);
     }
 
-    .hamburger:checked ~ .hamburgerMenu .hamburgerLine:after {
-        top:0px;
-        width:24px;
-        height:2.5px;
-        transform:rotate(-135deg);
+    .hamburger:checked~.hamburgerMenu .hamburgerLine:after {
+        top: 0px;
+        width: 24px;
+        height: 2.5px;
+        transform: rotate(-135deg);
     }
 
     .navMenu {
-        clear:both;
-        padding:0rem 1rem 0rem 1rem;
-        background:#011635;
-        max-height:0rem;
-        width:100%;
+        clear: both;
+        padding: 0rem 1rem 0rem 1rem;
+        background: #011635;
+        visibility: hidden;
+        max-height: 20rem;
+        width: 100%;
         overflow: hidden;
-        transition:max-height .2s ease-out;
+        transition: all .3s ease-out;
     }
 
     .headerUl {
-        margin:1rem 0rem 1rem 0rem;
+        margin: 1rem 0rem 1.5rem 0rem;
     }
 
     .headerHome,
@@ -2265,9 +2316,18 @@
     .headerGallery,
     .headerContact,
     .headerBlog {
-        display:block;
-        text-align:center;
-        color:#fff;
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 1.7rem;
+        transform: rotateY(90deg);
+        transition: all .3s ease-in-out;
+    }
+
+    .headerSocialContainer {
+        display: none;
     }
 
     .hero {
@@ -3206,103 +3266,116 @@
 
 @media screen and (min-width:576px) {
     .header {
-        width:100%;
-        height:4rem;
-        position:fixed;
-        z-index:999;
+        width: 100%;
+        height: 4rem;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #011635;
     }
 
     .headerContainer {
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
     }
 
     .headerLogo {
-        width:3.5rem;
-        height:3.5rem;
-        float:left;
-        background:url(./images/logo.png) center/cover no-repeat;
+        width: 3.5rem;
+        height: 3.5rem;
+        float: left;
+        background: url(./images/logo.png) center/cover no-repeat;
     }
 
     .hamburger {
-        display:none;
+        display: none;
     }
 
     .hamburgerMenu {
-        float:right;
-        width:2rem;
-        height:2rem;
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:center;
-        margin:1rem 1rem 0rem 1rem;
+        float: right;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 1rem 1rem 0rem 1rem;
     }
 
     .hamburgerLine {
-        display:block;
-        width:16px;
-        height:2.5px;
-        background:#fff;
-        position:relative;
-        transition:all .2s ease-in-out;
+        display: block;
+        width: 16px;
+        height: 2.5px;
+        background: #fff;
+        position: relative;
+        transition: all .2s ease-in-out;
     }
 
     .hamburgerLine:after {
-        content:"";
-        width:24px;
-        height:2.5px;
-        background:#fff;
-        position:absolute;
-        top:7px;
-        transition:all .2s ease-in-out;
+        content: "";
+        width: 24px;
+        height: 2.5px;
+        background: #fff;
+        position: absolute;
+        top: 7px;
+        transition: all .2s ease-in-out;
     }
 
     .hamburgerLine:before {
-        content:"";
-        width:20px;
-        height:2.5px;
-        background:#fff;
-        position:absolute;
-        top:-7px;
-        transition:all .2s ease-in-out;
+        content: "";
+        width: 20px;
+        height: 2.5px;
+        background: #fff;
+        position: absolute;
+        top: -7px;
+        transition: all .2s ease-in-out;
     }
 
-    .hamburger:checked ~ .navMenu {
-        max-height:12rem;
+    .hamburger:checked~.navMenu {
+        visibility: visible;
     }
 
-    .hamburger:checked ~ .hamburgerMenu .hamburgerLine {
-        top:0px;
+    .hamburger:checked~.navMenu .headerHome,
+    .hamburger:checked~.navMenu .headerAbout,
+    .hamburger:checked~.navMenu .headerGallery,
+    .hamburger:checked~.navMenu .headerContact,
+    .hamburger:checked~.navMenu .headerBlog {
+        transform: rotateY(0deg);
+    }
+
+    .hamburger:checked~.hamburgerMenu .hamburgerLine {
+        top: 0px;
         background: transparent;
     }
 
-    .hamburger:checked ~ .hamburgerMenu .hamburgerLine:before {
-        top:0px;
-        width:24px;
-        height:2.5px;
-        transform:rotate(135deg);
+    .hamburger:checked~.hamburgerMenu .hamburgerLine:before {
+        top: 0px;
+        width: 24px;
+        height: 2.5px;
+        transform: rotate(135deg);
     }
 
-    .hamburger:checked ~ .hamburgerMenu .hamburgerLine:after {
-        top:0px;
-        width:24px;
-        height:2.5px;
-        transform:rotate(-135deg);
+    .hamburger:checked~.hamburgerMenu .hamburgerLine:after {
+        top: 0px;
+        width: 24px;
+        height: 2.5px;
+        transform: rotate(-135deg);
     }
 
     .navMenu {
-        clear:both;
-        padding:0rem 1rem 0rem 1rem;
-        background:#011635;
-        max-height:0rem;
-        width:100%;
+        clear: both;
+        padding: 0rem 1rem 0rem 1rem;
+        background: #011635;
+        visibility: hidden;
+        max-height: 20rem;
+        width: 100%;
         overflow: hidden;
-        transition:max-height .2s ease-out;
+        transition: all .3s ease-out;
     }
 
     .headerUl {
-        margin:1rem 0rem 1rem 0rem;
+        margin: 1rem 0rem 1.5rem 0rem;
     }
 
     .headerHome,
@@ -3310,9 +3383,18 @@
     .headerGallery,
     .headerContact,
     .headerBlog {
-        display:block;
-        text-align:center;
-        color:#fff;
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 1.7rem;
+        transform: rotateY(90deg);
+        transition: all .3s ease-in-out;
+    }
+
+    .headerSocialContainer {
+        display: none;
     }
 
     .hero {
@@ -4326,6 +4408,7 @@
         max-height:100%;
         width:25rem;
         transition:none;
+        visibility: visible;
         padding:0rem 0rem 0rem 0rem;
     }
 
@@ -4348,6 +4431,7 @@
         display:flex;
         align-items:center;
         justify-content:center;
+        transform: rotateY(0deg);
     }
 
     .hero {
