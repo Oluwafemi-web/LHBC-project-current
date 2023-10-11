@@ -1,366 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LHBC Gallery</title>
-    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" />
     <!-- Font-Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="gallery.css">
-</head>
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-
-        <header class="header">
-            <div class="headerContainer">
-                <div class="headerSocialContainer">
-                    <p class="headerChurchName"><i class="fa-solid fa-location-dot"></i>LHBC Elelenwo Port Harcourt</p>
-                    <div class="headerSocials">
-                        <i class="fa-brands fa-facebook headerFacebook"></i>
-                        <i class="fa-brands fa-twitter headerTwitter"></i>
-                        <i class="fa-brands fa-youtube headerYoutube"></i>
-                        <i class="fa-brands fa-instagram headerInstagram"></i>
-                        <i class="fa-solid fa-magnifying-glass headerSearchBar"></i>
-                    </div>
-                </div>
-                <div class="navbar">
-                    <div class="headerLogo"></div>
-                    <input type="checkbox" name="" id="hamburger" class="hamburger">
-                    <label for="hamburger" class="hamburgerMenu"><span class="hamburgerLine"></span></label>
-                    <ul class="navMenu">
-                        <li class="headerUl"><a href="./index.html" class="headerHome">HOME</a></li>
-                        <li class="headerUl "><a href="./about.html" class="headerAbout">ABOUT</a></li>
-                        <li class="headerUl "><a href="./gallery.html" class="headerGallery">GALLERY</a></li>
-                        <li class="headerUl "><a href="./contact.html" class="headerContact">CONTACT</a></li>
-                        <li class="headerUl "><a href="./blog.html" class="headerBlog">BLOG</a></li>
-                    </ul>
-                </div>
+      <header class="header">
+        <div class="headerContainer">
+          <div class="headerSocialContainer">
+            <p class="headerChurchName">
+              <i class="fa-solid fa-location-dot"></i>LHBC Elelenwo Port
+              Harcourt
+            </p>
+            <div class="headerSocials">
+              <i class="fa-brands fa-facebook headerFacebook"></i>
+              <i class="fa-brands fa-twitter headerTwitter"></i>
+              <i class="fa-brands fa-youtube headerYoutube"></i>
+              <i class="fa-brands fa-instagram headerInstagram"></i>
+              <i class="fa-solid fa-magnifying-glass headerSearchBar"></i>
             </div>
-        </header>
+          </div>
+          <div class="navbar">
+            <div class="headerLogo"></div>
+            <input type="checkbox" name="" id="hamburger" class="hamburger" />
+            <label for="hamburger" class="hamburgerMenu"
+              ><span class="hamburgerLine"></span
+            ></label>
+            <ul class="navMenu">
+              <li class="headerUl">
+                <a href="./index.html" class="headerHome">HOME</a>
+              </li>
+              <li class="headerUl">
+                <a href="./about.html" class="headerAbout">ABOUT</a>
+              </li>
+              <li class="headerUl">
+                <a href="./gallery.html" class="headerGallery">GALLERY</a>
+              </li>
+              <li class="headerUl">
+                <a href="./contact.html" class="headerContact">CONTACT</a>
+              </li>
+              <li class="headerUl">
+                <a href="./blog.html" class="headerBlog">BLOG</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
-        <main class="main">
-            <div class="galleryBanner">
-                <h3 class="galleryBannerMainText">Gallery</h3>
+      <main class="main">
+        <div class="galleryBanner">
+          <h3 class="galleryBannerMainText">Gallery</h3>
+        </div>
+
+        <div class="mainContainer">
+          <div class="sideBar">
+            <div class="sideBarContainer">
+              <div class="categoryContent">
+                <input type="checkbox" name="" id="toggle" class="toggle" />
+                <label for="toggle" class="category"
+                  >Category<i class="fa-solid fa-caret-down caretBtn"></i
+                ></label>
+                <form action="" class="categoryItem">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="faithful"
+                    class="faithful"
+                  />
+                  <label for="faithful" class="categoryLabelFaithful"
+                    ><i class="fa-solid fa-star categoryIcon"></i
+                    >Faithful</label
+                  >
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="jesuslove"
+                    class="jesuslove"
+                  />
+                  <label for="jesuslove" class="categoryLabelJesuslove"
+                    ><i class="fa-solid fa-star categoryIcon"></i>Jesus'
+                    Love</label
+                  >
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="sincerity"
+                    class="sincerity"
+                  />
+                  <label for="sincerity" class="categoryLabelSincerity"
+                    ><i class="fa-solid fa-star categoryIcon"></i
+                    >Sincerity</label
+                  >
+                  <button type="submit" class="categorySubmitButton">
+                    Apply
+                  </button>
+                </form>
+              </div>
+              <form class="searchBarContainer">
+                <select name="year" id="year" class="yearBar">
+                  <option value="#">Year</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2020</option>
+                  <option value="2020">2021</option>
+                </select>
+                <input
+                  type="search"
+                  name=""
+                  id=""
+                  class="searchBar"
+                  placeholder="Search"
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                </button>
+              </form>
             </div>
+          </div>
 
-            <div class="mainContainer">
-                <div class="sideBar">
-                    <div class="sideBarContainer">
-                        <div class="categoryContent">
-                            <input type="checkbox" name="" id="toggle" class="toggle">
-                            <label for="toggle" class="category">Category<i
-                                    class="fa-solid fa-caret-down caretBtn"></i></label>
-                            <form action="" class="categoryItem">
-                                <input type="checkbox" name="" id="faithful" class="faithful">
-                                <label for="faithful" class="categoryLabelFaithful"><i
-                                        class="fa-solid fa-star categoryIcon"></i>Faithful</label>
-                                <input type="checkbox" name="" id="jesuslove" class="jesuslove">
-                                <label for="jesuslove" class="categoryLabelJesuslove"><i
-                                        class="fa-solid fa-star categoryIcon"></i>Jesus' Love</label>
-                                <input type="checkbox" name="" id="sincerity" class="sincerity">
-                                <label for="sincerity" class="categoryLabelSincerity"><i
-                                        class="fa-solid fa-star categoryIcon"></i>Sincerity</label>
-                                <button type="submit" class="categorySubmitButton">Apply</button>
-                            </form>
-                        </div>
-                        <form class="searchBarContainer">
-                            <input type="search" name="" id="" class="searchBar" placeholder="Search">
-                            <button type="submit"><i class="fa-solid fa-magnifying-glass searchIcon"></i></button>
-                        </form>
-                    </div>
+          <div class="galleryMessage">
+            <div class="galleryMessageContainer">
+              <h4 class="messageFirstText">LATEST SERMON</h4>
+              <div class="currentMessage">
+                <h4 class="currentMessageFirstText">
+                  Activating Goodnews Part 1
+                </h4>
+                <p class="preacher">
+                  - Rev'd Steve Ayorinde
+                  <span class="messageDate">27th October 2020</span>
+                </p>
+                <p class="message">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam perferendis illum laudantium amet necessitatibus ut
+                  enim officia nulla nisi sapiente? Distinctio ex labore
+                  consectetur dicta possimus dolorem quia quibusdam sequi
+                  cupiditate ab porro, incidunt autem beatae provident
+                  excepturi. Repudiandae atque officia quaerat praesentium.<br /><br />Iure
+                  nobis architecto expedita consequuntur similique dignissimos
+                  vel magnam delectus itaque odio, autem iste corporis. Deleniti
+                  dolore cumque ad numquam iusto officiis ratione deserunt
+                  perferendis cupiditate doloremque rerum animi molestias
+                  officia assumenda corrupti, maxime blanditiis laboriosam alias
+                  voluptatum tenetur quisquam earum quis debitis ea! Nulla
+                  fugiat asperiores reprehenderit quaerat quidem, nobis eveniet.
+                  Libero est odit nobis autem!<br /><br />
+                </p>
+                <div class="mediaIcons">
+                  <div class="mediaButton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <div class="mediaButton">
+                    <i class="fa-solid fa-pause"></i>
+                  </div>
+                  <div class="mediaButton">
+                    <i class="fa-solid fa-download"></i>
+                  </div>
+                  <div class="mediaButton">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
                 </div>
+              </div>
+              <button>
+                <a href="#" class="sermonButton">Previous Sermons</a>
+              </button>
+            </div>
+          </div>
 
-                <div class="galleryMessage">
-                    <div class="galleryMessageContainer">
-                        <h4 class="messageFirstText">LATEST SERMON</h4>
-                        <div class="currentMessage">
-                            <h4 class="currentMessageFirstText">Activating Goodnews Part 1</h4>
-                            <p class="preacher">- Rev'd Steve Ayorinde <span class="messageDate">27th October
-                                    2020</span></p>
-                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                                perferendis illum laudantium amet necessitatibus ut enim officia nulla nisi
-                                sapiente?
-                                Distinctio ex labore consectetur dicta possimus dolorem quia quibusdam sequi
-                                cupiditate
-                                ab porro, incidunt autem beatae provident excepturi. Repudiandae atque officia
-                                quaerat
-                                praesentium.<br /><br />Iure nobis architecto expedita consequuntur similique
-                                dignissimos vel magnam delectus itaque odio, autem iste corporis. Deleniti dolore
-                                cumque
-                                ad numquam iusto officiis ratione deserunt perferendis cupiditate doloremque rerum
-                                animi
-                                molestias officia assumenda corrupti, maxime blanditiis laboriosam alias voluptatum
-                                tenetur quisquam earum quis debitis ea! Nulla fugiat asperiores reprehenderit
-                                quaerat
-                                quidem, nobis eveniet. Libero est odit nobis autem!<br /><br />Lorem ipsum dolor sit
-                                amet consectetur adipisicing elit. Quisquam perferendis illum laudantium amet
-                                necessitatibus ut enim officia nulla nisi sapiente? Distinctio ex labore consectetur
-                                dicta possimus dolorem quia quibusdam sequi cupiditate ab porro, incidunt autem
-                                beatae
-                                provident excepturi. Repudiandae atque officia quaerat praesentium.<br /><br />Iure
-                                nobis architecto expedita consequuntur similique dignissimos vel magnam delectus
-                                itaque
-                                odio, autem iste corporis. Deleniti dolore cumque ad numquam iusto officiis ratione
-                                deserunt perferendis cupiditate doloremque rerum animi molestias officia assumenda
-                                corrupti, maxime blanditiis laboriosam alias voluptatum tenetur quisquam earum quis
-                                debitis ea! Nulla fugiat asperiores reprehenderit quaerat quidem, nobis eveniet.
-                                Libero
-                                est odit nobis autem!</p>
-                            <div class="mediaIcons">
-                                <div class="mediaButton"><i class="fa-solid fa-play"></i></div>
-                                <div class="mediaButton"><i class="fa-solid fa-pause"></i></div>
-                                <div class="mediaButton"><i class="fa-solid fa-download"></i></div>
-                                <div class="mediaButton"><i class="fa-solid fa-share-nodes"></i></div>
-                            </div>
-                        </div>
-                        <button><a href="#" class="sermonButton">Previous Sermons</a></button>
-                    </div>
+          <div class="galleryMessageList">
+            <div class="galleryMessageListContainer">
+              <input
+                type="checkbox"
+                name=""
+                id="gridAndFlex"
+                class="messageDisplayType"
+              />
+              <label for="gridAndFlex" class="gridAndFlex">
+                <span class="displayToggle"></span>
+              </label>
+              <div class="messageGallery">
+                <div class="message1">
+                  <div class="messageImg"></div>
+                  <div class="messageContentContainer">
+                    <h5 class="messageHeader">Activating Good news Part 1</h5>
+                    <p class="messagePreacher">
+                      - Rev'd Steve Ayorinde
+                      <span class="messageDateAndMonth">27th October 2020</span>
+                    </p>
+                    <p class="messageContent">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quod inventore obcaecati ex beatae eos ducimus repudiandae
+                      fuga, quaerat vel quidem, architecto, nulla qui? Error
+                      perferendis cumque doloremque minima, nesciunt natus.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sed praesentium ad saepe optio ipsam? Soluta at ipsam
+                      explicabo iusto minima!
+                    </p>
+                    <button class="messageReadmoreBtn">
+                      <a href="#" class="messageReadmore">Read More</a>
+                    </button>
+                  </div>
                 </div>
-
-                <div class="galleryMessageList">
-                    <div class="galleryMessageListContainer">
-                        <input type="checkbox" name="" id="gridAndFlex" class="messageDisplayType">
-                        <label for="gridAndFlex" class="gridAndFlex">
-                            <span class="displayToggle"></span>
-                        </label>
-                        <div class="messageGallery">
-                            <div class="message1">
-                                <div class="messageImg"></div>
-                                <div class="messageContentContainer">
-                                    <h5 class="messageHeader">Activating Good news Part 1</h5>
-                                    <p class="messagePreacher">- Rev'd Steve Ayorinde <span
-                                            class="messageDateAndMonth">27th October 2020</span></p>
-                                    <p class="messageContent">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Quod inventore obcaecati ex beatae eos ducimus repudiandae fuga, quaerat vel
-                                        quidem, architecto, nulla qui? Error perferendis cumque doloremque minima,
-                                        nesciunt natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Sed
-                                        praesentium ad saepe optio ipsam? Soluta at ipsam explicabo iusto minima!
-                                    </p>
-                                    <button class="messageReadmoreBtn">
-                                        <a href="#" class="messageReadmore">Read More</a>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="message2">
-                                <div class="messageImg"></div>
-                                <div class="messageContentContainer">
-                                    <h5 class="messageHeader">Activating Good news Part 1</h5>
-                                    <p class="messagePreacher">- Rev'd Steve Ayorinde <span
-                                            class="messageDateAndMonth">27th October 2020</span></p>
-                                    <p class="messageContent">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Quod inventore obcaecati ex beatae eos ducimus repudiandae fuga, quaerat vel
-                                        quidem, architecto, nulla qui? Error perferendis cumque doloremque minima,
-                                        nesciunt natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Sed
-                                        praesentium ad saepe optio ipsam? Soluta at ipsam explicabo iusto minima!
-                                    </p>
-                                    <button class="messageReadmoreBtn">
-                                        <a href="#" class="messageReadmore">Read More</a>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="message3">
-                                <div class="messageImg"></div>
-                                <div class="messageContentContainer">
-                                    <h5 class="messageHeader">Activating Good news Part 1</h5>
-                                    <p class="messagePreacher">- Rev'd Steve Ayorinde <span
-                                            class="messageDateAndMonth">27th October 2020</span></p>
-                                    <p class="messageContent">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Quod inventore obcaecati ex beatae eos ducimus repudiandae fuga, quaerat vel
-                                        quidem, architecto, nulla qui? Error perferendis cumque doloremque minima,
-                                        nesciunt natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Sed
-                                        praesentium ad saepe optio ipsam? Soluta at ipsam explicabo iusto minima!
-                                    </p>
-                                    <button class="messageReadmoreBtn">
-                                        <a href="#" class="messageReadmore">Read More</a>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="message4">
-                                <div class="messageImg"></div>
-                                <div class="messageContentContainer">
-                                    <h5 class="messageHeader">Activating Good news Part 1</h5>
-                                    <p class="messagePreacher">- Rev'd Steve Ayorinde <span
-                                            class="messageDateAndMonth">27th October 2020</span></p>
-                                    <p class="messageContent">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Quod inventore obcaecati ex beatae eos ducimus repudiandae fuga, quaerat vel
-                                        quidem, architecto, nulla qui? Error perferendis cumque doloremque minima,
-                                        nesciunt natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Sed
-                                        praesentium ad saepe optio ipsam? Soluta at ipsam explicabo iusto minima!
-                                    </p>
-                                    <button class="messageReadmoreBtn">
-                                        <a href="#" class="messageReadmore">Read More</a>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- <div class="messageNavigation">
+                <div class="message2">
+                  <div class="messageImg"></div>
+                  <div class="messageContentContainer">
+                    <h5 class="messageHeader">Activating Good news Part 1</h5>
+                    <p class="messagePreacher">
+                      - Rev'd Steve Ayorinde
+                      <span class="messageDateAndMonth">27th October 2020</span>
+                    </p>
+                    <p class="messageContent">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quod inventore obcaecati ex beatae eos ducimus repudiandae
+                      fuga, quaerat vel quidem, architecto, nulla qui? Error
+                      perferendis cumque doloremque minima, nesciunt natus.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sed praesentium ad saepe optio ipsam? Soluta at ipsam
+                      explicabo iusto minima!
+                    </p>
+                    <button class="messageReadmoreBtn">
+                      <a href="#" class="messageReadmore">Read More</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="message3">
+                  <div class="messageImg"></div>
+                  <div class="messageContentContainer">
+                    <h5 class="messageHeader">Activating Good news Part 1</h5>
+                    <p class="messagePreacher">
+                      - Rev'd Steve Ayorinde
+                      <span class="messageDateAndMonth">27th October 2020</span>
+                    </p>
+                    <p class="messageContent">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quod inventore obcaecati ex beatae eos ducimus repudiandae
+                      fuga, quaerat vel quidem, architecto, nulla qui? Error
+                      perferendis cumque doloremque minima, nesciunt natus.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sed praesentium ad saepe optio ipsam? Soluta at ipsam
+                      explicabo iusto minima!
+                    </p>
+                    <button class="messageReadmoreBtn">
+                      <a href="#" class="messageReadmore">Read More</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="message4">
+                  <div class="messageImg"></div>
+                  <div class="messageContentContainer">
+                    <h5 class="messageHeader">Activating Good news Part 1</h5>
+                    <p class="messagePreacher">
+                      - Rev'd Steve Ayorinde
+                      <span class="messageDateAndMonth">27th October 2020</span>
+                    </p>
+                    <p class="messageContent">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quod inventore obcaecati ex beatae eos ducimus repudiandae
+                      fuga, quaerat vel quidem, architecto, nulla qui? Error
+                      perferendis cumque doloremque minima, nesciunt natus.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sed praesentium ad saepe optio ipsam? Soluta at ipsam
+                      explicabo iusto minima!
+                    </p>
+                    <button class="messageReadmoreBtn">
+                      <a href="#" class="messageReadmore">Read More</a>
+                    </button>
+                  </div>
+                </div>
+                <!-- <div class="messageNavigation">
                             <button class="firstButton">Last</button>
                             <button class="firstButton">01</button>
                             <button class="firstButton">02</button>
                             <button class="firstButton">Next</button>
                         </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="popularPost">
-                    <div class="popularPostContainer">
-                        <h5 class="popularPostHeader">Popular Posts</h5>
-                        <div class="firstPost">
-                            <div class="popularPostImg"></div>
-                            <div class="postContent">
-                                <h5 class="postHeader">Giving to God - Active ways to get blessed</h5>
-                                <p class="popularPostDate"><i class="fa-solid fa-calendar-days"></i>0ct 16th, 2020
-                                </p>
-                            </div>
-                        </div>
-                        <div class="secondPost">
-                            <div class="popularPostImg"></div>
-                            <div class="postContent">
-                                <h5 class="postHeader">Giving to God - Active ways to get blessed</h5>
-                                <p class="popularPostDate"><i class="fa-solid fa-calendar-days"></i>0ct 16th, 2020
-                                </p>
-                            </div>
-                        </div>
-                        <div class="thirdPost">
-                            <div class="popularPostImg"></div>
-                            <div class="postContent">
-                                <h5 class="postHeader">Giving to God - Active ways to get blessed</h5>
-                                <p class="popularPostDate"><i class="fa-solid fa-calendar-days"></i>0ct 16th, 2020
-                                </p>
-                            </div>
-                        </div>
-                        <div class="fourthPost">
-                            <div class="popularPostImg"></div>
-                            <div class="postContent">
-                                <h5 class="postHeader">Giving to God - Active ways to get blessed</h5>
-                                <p class="popularPostDate"><i class="fa-solid fa-calendar-days"></i>0ct 16th, 2020
-                                </p>
-                            </div>
-                        </div>
-                        <div class="fifthPost">
-                            <div class="popularPostImg"></div>
-                            <div class="postContent">
-                                <h5 class="postHeader">Giving to God - Active ways to get blessed</h5>
-                                <p class="popularPostDate"><i class="fa-solid fa-calendar-days"></i>0ct 16th, 2020
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="event">
-                <h4 class="eventHeader">NEXT EVENT</h4>
-                <div class="eventContainer">
-                    <div class="eventDetails">
-                        <div class="eventMonthDate">
-                            <p class="day">10<span>th</span></p>
-                            <p class="month">Mar 2020</p>
-                        </div>
-                        <div class="eventDetailsContent">
-                            <h5 class="eventName">Operation ASK - 100 Days of Seeking God</h5>
-                            <p class="eventDate"><i class="fa-solid fa-calendar-plus"></i>Thursday 10th March, 2020</p>
-                            <p class="eventLocation"><i class="fa-solid fa-location-arrow fa-rotate-270"></i>LHBC,
-                                Elelenwo</p>
-                            <p class="eventAddress"><i class="fa-solid fa-map-pin"></i>High Tension Pole Road, Port
-                                Harcourt</p>
-                        </div>
-                    </div>
-                    <div class="timerContainer">
-                        <p class="days">20</p>
-                        <p class="hours">16</p>
-                        <p class="minutes">32</p>
-                        <p class="seconds">09</p>
-                    </div>
-                </div>
+        <div class="event">
+          <h4 class="eventHeader">NEXT EVENT</h4>
+          <div class="eventContainer">
+            <div class="eventDetails">
+              <div class="eventMonthDate">
+                <p class="day">10<span>th</span></p>
+                <p class="month">Mar 2020</p>
+              </div>
+              <div class="eventDetailsContent">
+                <h5 class="eventName">
+                  Operation ASK - 100 Days of Seeking God
+                </h5>
+                <p class="eventDate">
+                  <i class="fa-solid fa-calendar-plus"></i>Thursday 10th March,
+                  2020
+                </p>
+                <p class="eventLocation">
+                  <i class="fa-solid fa-location-arrow fa-rotate-270"></i>LHBC,
+                  Elelenwo
+                </p>
+                <p class="eventAddress">
+                  <i class="fa-solid fa-map-pin"></i>High Tension Pole Road,
+                  Port Harcourt
+                </p>
+              </div>
             </div>
-        </main>
+            <div class="timerContainer">
+              <p class="days">20</p>
+              <p class="hours">16</p>
+              <p class="minutes">32</p>
+              <p class="seconds">09</p>
+            </div>
+          </div>
+        </div>
+      </main>
 
-        <footer class="footer">
-            <div class="footerContainer">
-                <div class="footerAbout">
-                    <h4 class="footerAboutHeader">About US</h4>
-                    <p class="footerAboutText">We are a community of people loving each other and our Lord. Being
-                        completely humble gentle, patient and bearing with one another in love. We are a community of
-                        the Lord</p>
-                    <div class="socials">
-                        <div class="socialIcon"><i class="fa-brands fa-facebook facebook"></i></div>
-                        <div class="socialIcon"><i class="fa-brands fa-twitter twitter"></i></div>
-                        <div class="socialIcon"><i class="fa-brands fa-youtube youtube"></i></div>
-                        <div class="socialIcon"><i class="fa-brands fa-instagram instagram"></i></div>
-                    </div>
-                </div>
-                <div class="footerLinks">
-                    <h4 class="footerLinksHeader">Quick Links</h4>
-                    <p class="link"><a href="#" class="link1"><i class="fa-solid fa-star footerStarIcon"></i>Who are
-                            we?</a></p>
-                    <p class="link"><a href="#" class="link2"><i class="fa-solid fa-star footerStarIcon"></i>Who are
-                            we?</a></p>
-                    <p class="link"><a href="#" class="link3"><i class="fa-solid fa-star footerStarIcon"></i>Who are
-                            we?</a></p>
-                    <p class="link"><a href="#" class="link4"><i class="fa-solid fa-star footerStarIcon"></i>Who are
-                            we?</a></p>
-                    <p class="link"><a href="#" class="link5"><i class="fa-solid fa-star footerStarIcon"></i>Who are
-                            we?</a></p>
-                    <p class="link"><a href="#" class="link6"><i class="fa-solid fa-star footerStarIcon"></i>Who are
-                            we?</a></p>
-                </div>
-                <div class="footerUpdates">
-                    <h4 class="footerUpdatesHeader">Updates</h4>
-                    <div class="firstUpdate">
-                        <div class="updateImg"></div>
-                        <div class="footerUpdateContainer">
-                            <h5 class="updateHeader">Giving To God - Active ways to get blessed</h5>
-                            <p class="footerUpdateDate"><i class="fa-solid fa-calendar-plus calendarIcon"></i> October
-                                16, 2020</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="secondUpdate">
-                        <div class="updateImg"></div>
-                        <div class="footerUpdatecontainer">
-                            <h5 class="updateHeader">Giving To God - Active ways to get blessed</h5>
-                            <p class="footerUpdateDate"><i class="fa-solid fa-calendar-plus calendarIcon"></i> October
-                                16, 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footerNewsletter">
-                    <h4 class="footerNewsletterHeader">Newsletter</h4>
-                    <p class="footerNewsletterText">Sign up to receive daily updates and live feeds. <span>Your
-                            Information is private and safe. We won't spam you.</span></p>
-                    <div class="subscribe">
-                        <input type="email" name="" id="" placeholder="Email Address" class="newsletterEmail">
-                        <button type="submit" class="newsletterButton">Sign Up</button>
-                    </div>
-                </div>
+      <footer class="footer">
+        <div class="footerContainer">
+          <div class="footerAbout">
+            <h4 class="footerAboutHeader">About US</h4>
+            <p class="footerAboutText">
+              We are a community of people loving each other and our Lord. Being
+              completely humble gentle, patient and bearing with one another in
+              love. We are a community of the Lord
+            </p>
+            <div class="socials">
+              <div class="socialIcon">
+                <i class="fa-brands fa-facebook facebook"></i>
+              </div>
+              <div class="socialIcon">
+                <i class="fa-brands fa-twitter twitter"></i>
+              </div>
+              <div class="socialIcon">
+                <i class="fa-brands fa-youtube youtube"></i>
+              </div>
+              <div class="socialIcon">
+                <i class="fa-brands fa-instagram instagram"></i>
+              </div>
             </div>
-            <dt></dt>
-            <div class="copyright-Container">
-                <div class="copyrightContainer">
-                    <p class="copyright">Copyright | 2020 | Living Hope Baptist Church</p>
-                    <p class="privacyAndTerms">Privacy Policy | Terms & Conditions</p>
-                </div>
+          </div>
+          <div class="footerLinks">
+            <h4 class="footerLinksHeader">Quick Links</h4>
+            <p class="link">
+              <a href="#" class="link1"
+                ><i class="fa-solid fa-star footerStarIcon"></i>Who are we?</a
+              >
+            </p>
+            <p class="link">
+              <a href="#" class="link2"
+                ><i class="fa-solid fa-star footerStarIcon"></i>Who are we?</a
+              >
+            </p>
+            <p class="link">
+              <a href="#" class="link3"
+                ><i class="fa-solid fa-star footerStarIcon"></i>Who are we?</a
+              >
+            </p>
+            <p class="link">
+              <a href="#" class="link4"
+                ><i class="fa-solid fa-star footerStarIcon"></i>Who are we?</a
+              >
+            </p>
+            <p class="link">
+              <a href="#" class="link5"
+                ><i class="fa-solid fa-star footerStarIcon"></i>Who are we?</a
+              >
+            </p>
+            <p class="link">
+              <a href="#" class="link6"
+                ><i class="fa-solid fa-star footerStarIcon"></i>Who are we?</a
+              >
+            </p>
+          </div>
+          <div class="footerUpdates">
+            <h4 class="footerUpdatesHeader">Updates</h4>
+            <div class="firstUpdate">
+              <div class="updateImg"></div>
+              <div class="footerUpdateContainer">
+                <h5 class="updateHeader">
+                  Giving To God - Active ways to get blessed
+                </h5>
+                <p class="footerUpdateDate">
+                  <i class="fa-solid fa-calendar-plus calendarIcon"></i> October
+                  16, 2020
+                </p>
+              </div>
             </div>
-        </footer>
-
+            <hr />
+            <div class="secondUpdate">
+              <div class="updateImg"></div>
+              <div class="footerUpdatecontainer">
+                <h5 class="updateHeader">
+                  Giving To God - Active ways to get blessed
+                </h5>
+                <p class="footerUpdateDate">
+                  <i class="fa-solid fa-calendar-plus calendarIcon"></i> October
+                  16, 2020
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footerNewsletter">
+            <h4 class="footerNewsletterHeader">Newsletter</h4>
+            <p class="footerNewsletterText">
+              Sign up to receive daily updates and live feeds.
+              <span
+                >Your Information is private and safe. We won't spam you.</span
+              >
+            </p>
+            <div class="subscribe">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email Address"
+                class="newsletterEmail"
+              />
+              <button type="submit" class="newsletterButton">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <dt></dt>
+        <div class="copyright-Container">
+          <div class="copyrightContainer">
+            <p class="copyright">
+              Copyright | 2020 | Living Hope Baptist Church
+            </p>
+            <p class="privacyAndTerms">Privacy Policy | Terms & Conditions</p>
+          </div>
+        </div>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>
